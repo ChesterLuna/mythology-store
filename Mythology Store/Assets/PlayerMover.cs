@@ -14,14 +14,21 @@ public class PlayerMover : MonoBehaviour
         movement = Vector2.zero;
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        rb.linearVelocity = movement * speed * Time.deltaTime;
+        rb.linearVelocity = movement * speed * Time.fixedDeltaTime;
+        // rb.AddForce(movement * speed);
+        // print(movement * speed);
     }
+
 
     public void UpdateMovement(InputAction.CallbackContext callbackContext)
     {
-        movement = callbackContext.ReadValue<Vector2>();
+        Vector2 newMovement = callbackContext.ReadValue<Vector2>();
+
+        // Vector2 interpolatedMovement = Vector2.Lerp(movement, newMovement, 0.1f);
+
+        movement = newMovement;
 
     }
 
