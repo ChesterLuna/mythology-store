@@ -6,5 +6,6 @@ public class CardInfo : ScriptableObject
 
     public string cardName = "";
     public Sprite cardSprite = null;
-    
+    public Sprite defaultSprite = null;
+
 }
