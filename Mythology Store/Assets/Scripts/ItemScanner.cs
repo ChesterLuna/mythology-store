@@ -2,15 +2,23 @@ using UnityEngine;
 
 public class ItemScanner : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    [SerializeField] AudioClip beepSound;
+    [SerializeField] GameObject clipPlayer;
+
+    public void ScanProduct(Product product)
     {
-        
+        product.ScanProduct();
+        Instantiate(clipPlayer).GetComponent<AudioSource>().PlayOneShot(beepSound);
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        Product product;
+        if (collision.TryGetComponent<Product>(out product))
+        {
+            ScanProduct(product);
+        }
+
     }
 }
