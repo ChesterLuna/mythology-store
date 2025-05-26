@@ -8,7 +8,7 @@ public class Triggerer : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (playerTrigger && collision.CompareTag("Player") || !playerTrigger)
         {
             unityEvent.Invoke();
 
