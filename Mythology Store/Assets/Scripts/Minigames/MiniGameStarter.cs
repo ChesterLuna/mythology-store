@@ -11,7 +11,9 @@ public class MiniGameStarter : MonoBehaviour
             Debug.Log("No minigame to spawn");
             return;
         }
-        GameObject _miniGameInstance = Instantiate(miniGame);
+
+        Transform mainCanvas = GameObject.Find("Main Canvas").transform;
+        GameObject _miniGameInstance = Instantiate(miniGame, mainCanvas);
 
         // Stop player movement?
     }
