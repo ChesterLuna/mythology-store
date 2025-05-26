@@ -6,13 +6,11 @@ public class CardObject : MonoBehaviour
     [SerializeField] public CardInfo cardInfo;
 
     private Image image;
-    private CardManager cardManager;
+    public CardManager cardManager;
 
     void Start()
     {
         image = GetComponentInChildren<Image>();
-        cardManager = FindFirstObjectByType<CardManager>();
-        Hide();
     }
 
     public void Show()

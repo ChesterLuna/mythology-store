@@ -7,19 +7,32 @@ public class CardManager : MonoBehaviour
     [SerializeField] CardObject firstChoice = null;
     [SerializeField] CardObject secondChoice = null;
 
-    [SerializeField] CardInfo[] cardsToSpawn;
+    [SerializeField] GameObject cardGameObject;
 
-    CardObject[] cardObjects;
+    [SerializeField] CardInfo[] cardsToSpawn;
+    [SerializeField] Transform cardsParent;
+
+    List<CardObject> cardObjects = new List<CardObject>();
 
     void Start()
     {
         matchedPairs = 0;
-        cardObjects = GetComponentsInChildren<CardObject>();
-        SpawnCards(cardObjects);
+        SpawnCards(cardsToSpawn.Length * 2);
+        ShuffleCards(cardObjects);
 
     }
 
-    void SpawnCards(CardObject[] cardObjects)
+    void SpawnCards(int length)
+    {
+        for (int i = 0; i < length; i++)
+        {
+            CardObject cardO = Instantiate(cardGameObject, cardsParent).GetComponent<CardObject>();
+            cardO.cardManager = this;
+            cardObjects.Add(cardO);
+        }
+    }
+
+    void ShuffleCards(List<CardObject> cardObjects)
     {
         List<CardInfo> cardsSpawned = new List<CardInfo>();
 
@@ -29,9 +42,7 @@ public class CardManager : MonoBehaviour
             cardsSpawned.Add(cardInfo);
         }
 
-        Debug.Log(cardsSpawned[0].cardName);
         cardsSpawned = ShuffleList(cardsSpawned);
-        Debug.Log(cardsSpawned[0].cardName);
 
         for (int i = 0; i < cardsSpawned.Count; i++)
         {
