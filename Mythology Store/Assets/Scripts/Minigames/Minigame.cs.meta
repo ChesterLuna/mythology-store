@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 6bf6e16ef914d354aad9a4ab72e179d0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - winSound: {fileID: 8300000, guid: 0afa4ae0274569046924b65e4d316187, type: 3}
+  - clipPlayer: {fileID: 9166600661191671812, guid: 69569983e5fdd804985adaab99d07053, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

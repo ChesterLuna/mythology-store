@@ -1,7 +1,8 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CardManager : MonoBehaviour
+public class CardManager : Minigame
 {
     [SerializeField] int matchedPairs = 0;
     [SerializeField] CardObject firstChoice = null;
@@ -90,6 +91,11 @@ public class CardManager : MonoBehaviour
             list[j] = temp;
         }
         return list;
+    }
+
+    protected override bool HasWon()
+    {
+        return cardsToSpawn.Length <= matchedPairs;
     }
 
 }
