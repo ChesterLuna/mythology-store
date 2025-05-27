@@ -173,6 +173,7 @@ GameObject:
   - component: {fileID: 429426447}
   - component: {fileID: 429426448}
   - component: {fileID: 429426449}
+  - component: {fileID: 429426450}
   m_Layer: 0
   m_Name: Product (2)
   m_TagString: Untagged
@@ -361,6 +362,21 @@ TargetJoint2D:
   m_DampingRatio: 1
   m_Frequency: 5
 --- !u!114 &429426449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429426442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9719395454dcb11439c750823e1c2844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scanned: 0
+  hasMinigame: 0
+  minigame: {fileID: 0}
+--- !u!114 &429426450
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -837,6 +853,7 @@ GameObject:
   - component: {fileID: 1161893826}
   - component: {fileID: 1161893829}
   - component: {fileID: 1161893830}
+  - component: {fileID: 1161893831}
   m_Layer: 0
   m_Name: Product (1)
   m_TagString: Untagged
@@ -1009,6 +1026,21 @@ TargetJoint2D:
   m_MaxForce: 10000
   m_DampingRatio: 1
   m_Frequency: 5
+--- !u!114 &1161893831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161893824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9719395454dcb11439c750823e1c2844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scanned: 0
+  hasMinigame: 0
+  minigame: {fileID: 0}
 --- !u!1001 &1195728224
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1018,11 +1050,19 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2103768582905010386, guid: cbb671238001eb247b50fe26c535fda1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103768582905010386, guid: cbb671238001eb247b50fe26c535fda1, type: 3}
       propertyPath: playerTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2103768582905010386, guid: cbb671238001eb247b50fe26c535fda1, type: 3}
       propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103768582905010386, guid: cbb671238001eb247b50fe26c535fda1, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2103768582905010386, guid: cbb671238001eb247b50fe26c535fda1, type: 3}
@@ -1032,6 +1072,18 @@ PrefabInstance:
     - target: {fileID: 2103768582905010386, guid: cbb671238001eb247b50fe26c535fda1, type: 3}
       propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103768582905010386, guid: cbb671238001eb247b50fe26c535fda1, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ScanProduct
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103768582905010386, guid: cbb671238001eb247b50fe26c535fda1, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ItemScanner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103768582905010386, guid: cbb671238001eb247b50fe26c535fda1, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3411904019693837500, guid: cbb671238001eb247b50fe26c535fda1, type: 3}
       propertyPath: m_Name
@@ -1446,6 +1498,7 @@ GameObject:
   - component: {fileID: 1854859149}
   - component: {fileID: 1854859152}
   - component: {fileID: 1854859153}
+  - component: {fileID: 1854859154}
   m_Layer: 0
   m_Name: Product (3)
   m_TagString: Untagged
@@ -1628,6 +1681,21 @@ TargetJoint2D:
   m_MaxForce: 10000
   m_DampingRatio: 1
   m_Frequency: 5
+--- !u!114 &1854859154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854859147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9719395454dcb11439c750823e1c2844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scanned: 0
+  hasMinigame: 0
+  minigame: {fileID: 0}
 --- !u!1001 &2357500844631286475
 PrefabInstance:
   m_ObjectHideFlags: 0
