@@ -8,6 +8,7 @@ public abstract class Minigame : MonoBehaviour
 
     [SerializeField] protected AudioClip winSound;
     [SerializeField] protected GameObject clipPlayer;
+    [SerializeField] protected GameObject winScreen;
 
 
     protected void Update()
@@ -28,6 +29,7 @@ public abstract class Minigame : MonoBehaviour
         Instantiate(clipPlayer).GetComponent<AudioSource>().PlayOneShot(winSound);
 
         // Show winning screen
+        Instantiate(winScreen, this.transform);
 
         Debug.Log("Show Winning Screen");
 
