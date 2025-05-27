@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ed52646a38a252546849b25b30f0db64
+guid: 7a38574ce786a684aabd3e5d3f83e344
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3694550482862413247
-    second: UnoReverseCard_0
+      213: -173964424305036470
+    second: RealCreditCard_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UnoReverseCard_0
+      name: RealCreditCard_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1282
-        height: 1920
+        width: 1152
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 14aec3019e15abcc0800000000000000
-      internalID: -3694550482862413247
+      spriteID: a433ebd1744f59df0800000000000000
+      internalID: -173964424305036470
       vertices: []
       indices: 
       edges: []

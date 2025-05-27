@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 87a71114612f69945b0b707690714ccd
+guid: f585e2a581fcd0e45b3a6218ccc7f22f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -496806272007835129
-    second: DriversLicense_0
+      213: -5896429712261636615
+    second: SillyDriversLicense_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DriversLicense_0
+      name: SillyDriversLicense_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 5
-        width: 569
-        height: 427
+        x: 0
+        y: 0
+        width: 1152
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 70279cae35dfa19f0800000000000000
-      internalID: -496806272007835129
+      spriteID: 9fd1695da6cab2ea0800000000000000
+      internalID: -5896429712261636615
       vertices: []
       indices: 
       edges: []

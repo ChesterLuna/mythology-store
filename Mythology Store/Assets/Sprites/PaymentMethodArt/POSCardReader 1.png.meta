@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b3da9f15f8c9ba24dba85c0a445ad95d
+guid: e3d4cdebba0b0634f9d15d0157a68870
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5146563202195177271
-    second: CreditCardImage_0
+      213: -6063990648938173987
+    second: POSCardReader 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CreditCardImage_0
+      name: POSCardReader 1_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 1
-        width: 597
-        height: 401
+        x: 5
+        y: 2
+        width: 232
+        height: 355
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 73fb0f8f6f34c6740800000000000000
-      internalID: 5146563202195177271
+      spriteID: dd9efb812a068dba0800000000000000
+      internalID: -6063990648938173987
       vertices: []
       indices: 
       edges: []

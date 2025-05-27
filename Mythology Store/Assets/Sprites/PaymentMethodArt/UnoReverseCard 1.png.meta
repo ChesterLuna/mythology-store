@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2e9148fe808d10c4bb36fc305b42eb91
+guid: 86f1ad943a598b24cb37c3111b3d6402
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8057678181923504622
-    second: POSCardReader_0
+      213: 4696896109763988213
+    second: UnoReverseCard 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: POSCardReader_0
+      name: UnoReverseCard 1_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 2
-        width: 394
-        height: 606
+        x: 0
+        y: 0
+        width: 1152
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee147f37d9f92df60800000000000000
-      internalID: 8057678181923504622
+      spriteID: 5fa8569602abe2140800000000000000
+      internalID: 4696896109763988213
       vertices: []
       indices: 
       edges: []
