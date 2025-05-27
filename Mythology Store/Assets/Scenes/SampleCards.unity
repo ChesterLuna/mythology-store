@@ -1812,6 +1812,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7591299177607200412, guid: 84d04e6fdf0c5f1449c4c5d2249a7f40, type: 3}
+      propertyPath: winSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 0afa4ae0274569046924b65e4d316187, type: 3}
+    - target: {fileID: 7591299177607200412, guid: 84d04e6fdf0c5f1449c4c5d2249a7f40, type: 3}
+      propertyPath: clipPlayer
+      value: 
+      objectReference: {fileID: 9166600661191671812, guid: 69569983e5fdd804985adaab99d07053, type: 3}
     - target: {fileID: 7951345484385896686, guid: 84d04e6fdf0c5f1449c4c5d2249a7f40, type: 3}
       propertyPath: m_Name
       value: Card Matching Game
