@@ -4,6 +4,7 @@ using UnityEngine.Events;
 public class Triggerer : MonoBehaviour
 {
     [SerializeField] public bool playerTrigger = true;
+    [SerializeField] public bool destroyOnPlay = false;
     public UnityEvent unityEvent;
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -13,8 +14,11 @@ public class Triggerer : MonoBehaviour
             unityEvent.Invoke();
 
             // Add the to-do list
-            Destroy(this.gameObject);
+            if (destroyOnPlay)
+            {
+                Destroy(this.gameObject);
 
+            }
         }
     }
 
