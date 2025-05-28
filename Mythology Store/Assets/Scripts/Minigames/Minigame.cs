@@ -10,6 +10,10 @@ public abstract class Minigame : MonoBehaviour
     [SerializeField] protected GameObject clipPlayer;
     [SerializeField] protected GameObject winScreen;
 
+    protected void Start()
+    {
+        GameManager.Instance.AllowPlayerMovement(false);
+    }
 
     protected void Update()
     {
@@ -34,6 +38,8 @@ public abstract class Minigame : MonoBehaviour
         Debug.Log("Show Winning Screen");
 
         yield return new WaitForSeconds(winSound.length);
+
+        GameManager.Instance.AllowPlayerMovement(true);
 
         Destroy(this.gameObject);
 

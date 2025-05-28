@@ -15,7 +15,6 @@ public class MiniGameStarter : MonoBehaviour
         Transform mainCanvas = GameObject.Find("Main Canvas").transform;
         GameObject _miniGameInstance = Instantiate(miniGame, mainCanvas);
 
-        // Stop player movement?
     }
 
 }

@@ -15,8 +15,9 @@ public class CardManager : Minigame
 
     List<CardObject> cardObjects = new List<CardObject>();
 
-    void Start()
+    new void Start()
     {
+        base.Start();
         matchedPairs = 0;
         SpawnCards(cardsToSpawn.Length * 2);
         ShuffleCards(cardObjects);
