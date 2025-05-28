@@ -745,9 +745,10 @@ GameObject:
   - component: {fileID: 1188253729}
   - component: {fileID: 1188253727}
   - component: {fileID: 1188253728}
+  - component: {fileID: 1188253731}
   m_Layer: 0
-  m_Name: RealCreditCard
-  m_TagString: Card
+  m_Name: CreditCard
+  m_TagString: CreditCard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -796,7 +797,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -173964424305036470, guid: 7a38574ce786a684aabd3e5d3f83e344, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7a38574ce786a684aabd3e5d3f83e344, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -816,7 +817,7 @@ Transform:
   m_GameObject: {fileID: 1188253724}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.94, y: -2.06, z: 0}
+  m_LocalPosition: {x: -4.94, y: 2.13, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -837,7 +838,7 @@ TargetJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_Anchor: {x: 0, y: 0}
-  m_Target: {x: -4.94, y: -2.06}
+  m_Target: {x: -4.94, y: 2.13}
   m_AutoConfigureTarget: 1
   m_MaxForce: 10000
   m_DampingRatio: 1
@@ -908,7 +909,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1188253724}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -927,6 +928,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1188253731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188253724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee2fbc71e8f824b44b4ce13a32ab22a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scanned: 0
+  hasMinigame: 0
+  minigame: {fileID: 0}
 --- !u!1 &1216400649
 GameObject:
   m_ObjectHideFlags: 0
@@ -1281,10 +1297,11 @@ GameObject:
   - component: {fileID: 1490420837}
   - component: {fileID: 1490420836}
   - component: {fileID: 1490420835}
+  - component: {fileID: 1490420839}
   - component: {fileID: 1490420838}
   m_Layer: 0
-  m_Name: SillyDriversLicense
-  m_TagString: Untagged
+  m_Name: DriversLicense
+  m_TagString: DriversLicense
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1333,7 +1350,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6
-  m_Sprite: {fileID: -5896429712261636615, guid: f585e2a581fcd0e45b3a6218ccc7f22f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f585e2a581fcd0e45b3a6218ccc7f22f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1353,7 +1370,7 @@ Transform:
   m_GameObject: {fileID: 1490420832}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.95, y: -2.54, z: 0}
+  m_LocalPosition: {x: 0.18, y: 1.69, z: 0}
   m_LocalScale: {x: 0.4, y: 0.34, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1379,7 +1396,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490420832}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1428,7 +1445,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1459,11 +1476,26 @@ TargetJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_Anchor: {x: 0, y: 0}
-  m_Target: {x: -4.95, y: -2.54}
+  m_Target: {x: 0.18, y: 1.69}
   m_AutoConfigureTarget: 1
   m_MaxForce: 10000
   m_DampingRatio: 1
   m_Frequency: 5
+--- !u!114 &1490420839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490420832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee2fbc71e8f824b44b4ce13a32ab22a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scanned: 0
+  hasMinigame: 0
+  minigame: {fileID: 0}
 --- !u!1 &1701733701
 GameObject:
   m_ObjectHideFlags: 0
@@ -1476,7 +1508,7 @@ GameObject:
   - component: {fileID: 1701733702}
   m_Layer: 0
   m_Name: TemporaryBackground
-  m_TagString: Untagged
+  m_TagString: CreditCard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1564,7 +1596,7 @@ GameObject:
   - component: {fileID: 1721798525}
   - component: {fileID: 1721798524}
   m_Layer: 0
-  m_Name: POSCardReader
+  m_Name: POSTerminal
   m_TagString: Card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1614,12 +1646,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6063990648938173987, guid: e3d4cdebba0b0634f9d15d0157a68870, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e3d4cdebba0b0634f9d15d0157a68870, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.32, y: 3.55}
+  m_Size: {x: 2.39, y: 3.57}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1653,7 +1685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beepSound: {fileID: 8300000, guid: bf2636bd78519be468691214c3b434aa, type: 3}
-  clipPlayer: {fileID: 0}
+  clipPlayer: {fileID: 9166600661191671812, guid: 69569983e5fdd804985adaab99d07053, type: 3}
 --- !u!61 &1721798525
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1684,7 +1716,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1692,8 +1724,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.32, y: 3.55}
-    newSize: {x: 2.32, y: 3.55}
+    oldSize: {x: 2.39, y: 3.57}
+    newSize: {x: 2.39, y: 3.57}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1711,12 +1743,13 @@ GameObject:
   - component: {fileID: 1770960733}
   - component: {fileID: 1770960732}
   - component: {fileID: 1770960737}
+  - component: {fileID: 1770960738}
   - component: {fileID: 1770960736}
   - component: {fileID: 1770960735}
   - component: {fileID: 1770960734}
   m_Layer: 0
   m_Name: UnoReverseCard
-  m_TagString: Untagged
+  m_TagString: UnoReverseCard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1765,7 +1798,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 9
-  m_Sprite: {fileID: 4696896109763988213, guid: 86f1ad943a598b24cb37c3111b3d6402, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86f1ad943a598b24cb37c3111b3d6402, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1785,7 +1818,7 @@ Transform:
   m_GameObject: {fileID: 1770960731}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.02, y: -3.49, z: 0}
+  m_LocalPosition: {x: 1.51, y: -3.49, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1821,7 +1854,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1852,7 +1885,7 @@ TargetJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_Anchor: {x: 0, y: 0}
-  m_Target: {x: -5.02, y: -3.49}
+  m_Target: {x: 1.51, y: -3.49}
   m_AutoConfigureTarget: 1
   m_MaxForce: 10000
   m_DampingRatio: 1
@@ -1896,6 +1929,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8753074a45bfd8340abe5d1f7db8267f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1770960738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770960731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee2fbc71e8f824b44b4ce13a32ab22a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scanned: 0
+  hasMinigame: 0
+  minigame: {fileID: 0}
 --- !u!1 &1794054526
 GameObject:
   m_ObjectHideFlags: 0
