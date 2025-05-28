@@ -185,9 +185,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5ee7d1b31cf9ab46b03ca68b572b16d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winSound: {fileID: 0}
-  clipPlayer: {fileID: 0}
-  winScreen: {fileID: 0}
+  winSound: {fileID: 8300000, guid: 0afa4ae0274569046924b65e4d316187, type: 3}
+  clipPlayer: {fileID: 9166600661191671812, guid: 69569983e5fdd804985adaab99d07053, type: 3}
+  winScreen: {fileID: 2916801003325574382, guid: 61da8e4ceb534ac4eb257eeb6fa62e16, type: 3}
   matchedPairs: 0
   firstChoice: {fileID: 0}
   secondChoice: {fileID: 0}
