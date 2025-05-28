@@ -72,6 +72,7 @@ public class CardManager : Minigame
         if (a.cardInfo.cardName == b.cardInfo.cardName)
         {
             matchedPairs++;
+            a.SetMatched(true);
         }
         else
         {

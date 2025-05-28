@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class CardObject : MonoBehaviour
 {
     [SerializeField] public CardInfo cardInfo;
+    [SerializeField] public bool cardMatched = false;
 
     private Image image;
     public CardManager cardManager;
@@ -25,7 +26,13 @@ public class CardObject : MonoBehaviour
 
     public void SetSelected()
     {
+        if (cardMatched) return;
         Show();
         cardManager.SetSelected(this);
+    }
+
+    public void SetMatched(bool matched)
+    {
+        cardMatched = matched;
     }
 }

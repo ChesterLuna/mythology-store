@@ -1654,6 +1654,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2103768582905010386, guid: cbb671238001eb247b50fe26c535fda1, type: 3}
+      propertyPath: destroyOnPlay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103768582905010386, guid: cbb671238001eb247b50fe26c535fda1, type: 3}
       propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
