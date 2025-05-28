@@ -9,7 +9,7 @@ public class AudioPlayer : MonoBehaviour
     {
         if(audioSource.isPlaying == false)
         {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
     }
 

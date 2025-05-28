@@ -12,7 +12,9 @@ public class Triggerer : MonoBehaviour
         {
             unityEvent.Invoke();
 
-            // Delete triggerer?
+            // Add the to-do list
+            Destroy(this.gameObject);
+
         }
     }
 
