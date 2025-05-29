@@ -7,7 +7,7 @@ public class DialogueStarter : MonoBehaviour
 
     void Start()
     {
-        npcConversation = GetComponent<NPCConversation>();
+        npcConversation = GetComponentInChildren<NPCConversation>();
     }
 
     public void StartDialogue()
