@@ -1,3 +1,4 @@
+using DialogueEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -20,6 +21,8 @@ public class GameManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(this);
             SceneManager.sceneLoaded += OnSceneLoaded;
+            ConversationManager.OnConversationStarted += StopMovement;
+            ConversationManager.OnConversationEnded += AllowMovement;
         }
     }
 
@@ -29,18 +32,27 @@ public class GameManager : MonoBehaviour
         {
             playerMover = FindFirstObjectByType<PlayerMover>();
         }
+        
     }
 
     public void AllowPlayerMovement(bool allowMovement)
     {
         if (allowMovement)
         {
-            playerMover.AllowMovement();
+            AllowMovement();
         }
         else
         {
-            playerMover.StopMovement();
+            StopMovement();
         }
+    }
+    public void AllowMovement()
+    {
+        playerMover.AllowMovement();
+    }
+    public void StopMovement()
+    {
+        playerMover.StopMovement();
     }
 
 }
