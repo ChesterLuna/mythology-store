@@ -13,7 +13,7 @@ public class MiniGameStarter : MonoBehaviour
     {
         if (hasStartingDialogue)
         {
-            npcConversation = GetComponent<NPCConversation>();
+            npcConversation = GetComponentInChildren<NPCConversation>();
         }
     }
 
