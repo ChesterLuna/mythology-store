@@ -12,7 +12,6 @@ namespace DialogueEditor
         V1_03 = 103,    // Initial save data
         V1_10 = 110,    // Parameters
     }
-    
 
     //--------------------------------------
     // Conversation Monobehaviour (Serialized)
@@ -20,6 +19,7 @@ namespace DialogueEditor
 
     [System.Serializable]
     [DisallowMultipleComponent]
+    [RequireComponent(typeof(NPCConversationSaver))]
     public class NPCConversation : MonoBehaviour
     {
         // Consts
@@ -32,7 +32,7 @@ namespace DialogueEditor
 
         // Serialized data
         [SerializeField] public int CurrentIDCounter = 1;
-        [SerializeField] private string json;
+        [SerializeField] public string json;
         [SerializeField] private int saveVersion;
         [SerializeField] public string DefaultName;
         [SerializeField] public Sprite DefaultSprite;
@@ -121,6 +121,8 @@ namespace DialogueEditor
 
             conversation.Parameters = this.ParameterList;
             json = Jsonify(conversation);
+            GetComponent<NPCConversationSaver>().json = json;
+            UnityEditor.PrefabUtility.ApplyPrefabInstance(this.gameObject, UnityEditor.InteractionMode.AutomatedAction);
         }
 
         public Conversation Deserialize()
@@ -136,7 +138,7 @@ namespace DialogueEditor
         {
             // Dejsonify 
             EditableConversation conversation = Dejsonify();
-            
+
             if (conversation != null)
             {
                 // Copy the param list
@@ -307,7 +309,11 @@ namespace DialogueEditor
         private EditableConversation Dejsonify()
         {
             if (json == null || json == "")
+            {
+                Debug.Log("Its null");
                 return null;
+            }
+            Debug.Log(json);
 
             EditableConversation conversation = new EditableConversation();
             System.IO.MemoryStream ms = new System.IO.MemoryStream(System.Text.Encoding.UTF8.GetBytes(json));
