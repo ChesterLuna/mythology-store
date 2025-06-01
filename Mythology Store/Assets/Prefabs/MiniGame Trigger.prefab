@@ -188,6 +188,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8839251830197959126}
     m_Modifications:
+    - target: {fileID: 1467817060337440344, guid: d8d1511455090e24192555f18536503c, type: 3}
+      propertyPath: json
+      value: '{"Options":[],"Parameters":null,"SpeechNodes":[]}'
+      objectReference: {fileID: 0}
     - target: {fileID: 6122773435459420293, guid: d8d1511455090e24192555f18536503c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -231,6 +235,10 @@ PrefabInstance:
     - target: {fileID: 6627755944261087809, guid: d8d1511455090e24192555f18536503c, type: 3}
       propertyPath: m_Name
       value: NPC Dialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6974462682669861860, guid: d8d1511455090e24192555f18536503c, type: 3}
+      propertyPath: json
+      value: '{"Options":[],"Parameters":null,"SpeechNodes":[]}'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
