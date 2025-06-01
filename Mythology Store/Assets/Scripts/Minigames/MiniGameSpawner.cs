@@ -12,6 +12,7 @@ public class MiniGameSpawner : MonoBehaviour
     [Header("List")]
     [SerializeField] private Transform listTransform;
     [SerializeField] private GameObject taskObject;
+    [SerializeField] private int minimumListSize = 11;
 
 
     void Start()
@@ -26,12 +27,24 @@ public class MiniGameSpawner : MonoBehaviour
         foreach (MiniGameContainer container in miniGameContainers)
         {
             miniGamesDict.Add(container.miniGameName, container);
-        }
-
-        foreach (MiniGameContainer container in miniGameContainers)
-        {
             container.gameObject.SetActive(false);
         }
+
+        for (int i = 0; i < difficultyLevel; i++)
+        {
+            SpawnTask(miniGameContainers[i].miniGameName, miniGameContainers[i].toDoListLine);
+        }
+
+
+        int leftOutTasks = minimumListSize - listTransform.childCount;
+        if (leftOutTasks > 0)
+        {
+            for (int i = 0; i < leftOutTasks; i++)
+            {
+                SpawnTask("", "");
+            }
+        }
+
 
 
     }
@@ -41,7 +54,14 @@ public class MiniGameSpawner : MonoBehaviour
         GameObject task = Instantiate(taskObject, listTransform);
         task.GetComponent<TextMeshProUGUI>().text = taskText;
 
-        tasksDict.Add(taskName, task);
+        if (taskName != "")
+        {
+            tasksDict.Add(taskName, task);
+        }
+        else
+        {
+            Debug.Log("Spawned empty task");
+        }
     }
 
     // Update is called once per frame
