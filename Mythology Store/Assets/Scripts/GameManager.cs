@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     private PlayerMover playerMover;
+    public int difficultyLevel = 2;
 
     private void Awake()
     {
