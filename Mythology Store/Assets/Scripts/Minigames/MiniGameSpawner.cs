@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 
@@ -30,12 +31,19 @@ public class MiniGameSpawner : MonoBehaviour
             container.gameObject.SetActive(false);
         }
 
+        List<string> tasksToSpawn = ShuffleList(miniGamesDict.Keys.ToList<string>());
         for (int i = 0; i < difficultyLevel; i++)
         {
-            SpawnTask(miniGameContainers[i].miniGameName, miniGameContainers[i].toDoListLine);
+            MiniGameContainer taskToSpawn = miniGamesDict[tasksToSpawn[i]];
+            SpawnTask(taskToSpawn.miniGameName, taskToSpawn.toDoListLine);
         }
 
+        SpawnEmptyTasks();
 
+    }
+
+    private void SpawnEmptyTasks()
+    {
         int leftOutTasks = minimumListSize - listTransform.childCount;
         if (leftOutTasks > 0)
         {
@@ -44,9 +52,6 @@ public class MiniGameSpawner : MonoBehaviour
                 SpawnTask("", "");
             }
         }
-
-
-
     }
 
     public void SpawnTask(string taskName, string taskText)
@@ -64,9 +69,16 @@ public class MiniGameSpawner : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    //From https://www.wayline.io/blog/how-to-shuffle-a-list-in-unity but modified to be generic
+    public static List<T> ShuffleList<T>(List<T> list)
     {
-        
+        for (int i = list.Count - 1; i > 0; i--)
+        {
+            int j = Random.Range(0, i + 1);
+            T temp = list[i];
+            list[i] = list[j];
+            list[j] = temp;
+        }
+        return list;
     }
 }
