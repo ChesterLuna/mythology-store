@@ -10,6 +10,9 @@ public abstract class Minigame : MonoBehaviour
     [SerializeField] protected GameObject clipPlayer;
     [SerializeField] protected GameObject winScreen;
 
+    [SerializeField] public string miniGameName;
+
+
     protected void Start()
     {
         GameManager.Instance.AllowPlayerMovement(false);
@@ -40,6 +43,7 @@ public abstract class Minigame : MonoBehaviour
         yield return new WaitForSeconds(winSound.length);
 
         GameManager.Instance.AllowPlayerMovement(true);
+        GameManager.Instance.FinishedMiniGame(miniGameName);
 
         Destroy(this.gameObject);
 

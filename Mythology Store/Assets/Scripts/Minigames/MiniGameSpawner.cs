@@ -7,7 +7,6 @@ public class MiniGameSpawner : MonoBehaviour
 {
     private MiniGameContainer[] miniGameContainers;
     private Dictionary<string, MiniGameContainer> miniGamesDict;
-    private Dictionary<string, GameObject> tasksDict;
     private int difficultyLevel = 2;
 
     [Header("List")]
@@ -19,8 +18,6 @@ public class MiniGameSpawner : MonoBehaviour
     void Start()
     {
         miniGamesDict = new Dictionary<string, MiniGameContainer>();
-        tasksDict = new Dictionary<string, GameObject>();
-
         miniGameContainers = GetComponentsInChildren<MiniGameContainer>();
 
         difficultyLevel = GameManager.Instance.difficultyLevel;
@@ -66,7 +63,7 @@ public class MiniGameSpawner : MonoBehaviour
 
         if (taskName != "")
         {
-            tasksDict.Add(taskName, task);
+            GameManager.Instance.currentTasksDict.Add(taskName, task);
             miniGamesDict[taskName].gameObject.SetActive(true);
         }
         else

@@ -14,6 +14,8 @@ public class MiniGameContainer : MonoBehaviour
         {
             toDoListLine = "Get " + miniGameName + ".";
         }
+
+        GetComponentInChildren<MiniGameStarter>().miniGameName = miniGameName;
     }
 
 }

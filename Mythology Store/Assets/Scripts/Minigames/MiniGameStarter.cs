@@ -8,6 +8,7 @@ public class MiniGameStarter : MonoBehaviour
 
     private NPCConversation npcConversation;
 
+    [SerializeField] public string miniGameName;
 
     void Start()
     {
@@ -42,6 +43,7 @@ public class MiniGameStarter : MonoBehaviour
 
         Transform mainCanvas = GameObject.Find("Main Canvas").transform;
         GameObject _miniGameInstance = Instantiate(miniGame, mainCanvas);
+        _miniGameInstance.GetComponent<Minigame>().miniGameName = miniGameName;
 
         if (hasStartingDialogue)
         {

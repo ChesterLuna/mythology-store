@@ -1,4 +1,7 @@
+using System;
+using System.Collections.Generic;
 using DialogueEditor;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,6 +12,8 @@ public class GameManager : MonoBehaviour
 
     private PlayerMover playerMover;
     public int difficultyLevel = 2;
+    public Dictionary<string, GameObject> currentTasksDict = new Dictionary<string, GameObject>();
+    public List<string> finishedTasks = new List<string>();
 
     private void Awake()
     {
@@ -33,7 +38,7 @@ public class GameManager : MonoBehaviour
         {
             playerMover = FindFirstObjectByType<PlayerMover>();
         }
-        
+
     }
 
     public void AllowPlayerMovement(bool allowMovement)
@@ -55,5 +60,18 @@ public class GameManager : MonoBehaviour
     {
         playerMover.StopMovement();
     }
+
+    public void FinishedMiniGame(string miniGameName)
+    {
+        TextMeshProUGUI taskDone = currentTasksDict[miniGameName].GetComponent<TextMeshProUGUI>();
+        taskDone.text = "<s>" + taskDone.text + "</s>";
+        finishedTasks.Add(miniGameName);
+
+        if (finishedTasks.Count >= difficultyLevel)
+        {
+            Debug.Log("All tasks done");
+        }
+    }
+    
 
 }
