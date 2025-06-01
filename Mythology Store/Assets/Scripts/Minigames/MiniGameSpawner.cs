@@ -31,15 +31,20 @@ public class MiniGameSpawner : MonoBehaviour
             container.gameObject.SetActive(false);
         }
 
+        SpawnRandomTasks(difficultyLevel);
+
+        SpawnEmptyTasks();
+
+    }
+
+    private void SpawnRandomTasks(int amount)
+    {
         List<string> tasksToSpawn = ShuffleList(miniGamesDict.Keys.ToList<string>());
-        for (int i = 0; i < difficultyLevel; i++)
+        for (int i = 0; i < amount; i++)
         {
             MiniGameContainer taskToSpawn = miniGamesDict[tasksToSpawn[i]];
             SpawnTask(taskToSpawn.miniGameName, taskToSpawn.toDoListLine);
         }
-
-        SpawnEmptyTasks();
-
     }
 
     private void SpawnEmptyTasks()
@@ -62,6 +67,7 @@ public class MiniGameSpawner : MonoBehaviour
         if (taskName != "")
         {
             tasksDict.Add(taskName, task);
+            miniGamesDict[taskName].gameObject.SetActive(true);
         }
         else
         {
