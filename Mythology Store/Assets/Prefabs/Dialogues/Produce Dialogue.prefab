@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1467817060337440344, guid: d8d1511455090e24192555f18536503c, type: 3}
+      propertyPath: json
+      value: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":245.999969,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"This
+        is the Produce Guy","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Produce
+        Guy","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":235.600037,"yPos":276.800018},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Do
+        you want to Produce together?;))))","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Produce
+        Guy","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+      objectReference: {fileID: 0}
     - target: {fileID: 6122773435459420293, guid: d8d1511455090e24192555f18536503c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -51,6 +59,14 @@ PrefabInstance:
     - target: {fileID: 6627755944261087809, guid: d8d1511455090e24192555f18536503c, type: 3}
       propertyPath: m_Name
       value: Produce Dialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6974462682669861860, guid: d8d1511455090e24192555f18536503c, type: 3}
+      propertyPath: json
+      value: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":245.999969,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"This
+        is the Produce Guy","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Produce
+        Guy","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":235.600037,"yPos":276.800018},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Do
+        you want to Produce together?;))))","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Produce
+        Guy","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
