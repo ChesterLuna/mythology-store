@@ -16,6 +16,7 @@ public abstract class Minigame : MonoBehaviour
     protected void Start()
     {
         GameManager.Instance.AllowPlayerMovement(false);
+        GameManager.Instance.miniGameInProgress = true;
     }
 
     protected void Update()
@@ -44,6 +45,7 @@ public abstract class Minigame : MonoBehaviour
 
         GameManager.Instance.AllowPlayerMovement(true);
         GameManager.Instance.FinishedMiniGame(miniGameName);
+        GameManager.Instance.miniGameInProgress = false;
 
         Destroy(this.gameObject);
 

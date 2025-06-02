@@ -23,6 +23,7 @@ public class MiniGameStarter : MonoBehaviour
         if (hasStartingDialogue && npcConversation != null)
         {
             ConversationManager.Instance.StartConversation(npcConversation);
+            GameManager.Instance.DisableList();
             ConversationManager.OnConversationEnded += SpawnMiniGame;
         }
         else

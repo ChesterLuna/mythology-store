@@ -13,6 +13,7 @@ public class DialogueStarter : MonoBehaviour
     public void StartDialogue()
     {
         ConversationManager.Instance.StartConversation(npcConversation);
+        GameManager.Instance.DisableList();
     }
 
 }

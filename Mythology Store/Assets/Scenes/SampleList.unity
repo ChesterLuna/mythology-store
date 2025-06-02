@@ -866,6 +866,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1271775326 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7956457217970731956, guid: 83438f18c8ccfe44889792fe9e215c4e, type: 3}
+  m_PrefabInstance: {fileID: 2357500844631286475}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1533314011
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,6 +1207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2679407690171483849, guid: f2975fe983f83f141acb93a45e82e004, type: 3}
+      propertyPath: listObject
+      value: 
+      objectReference: {fileID: 1271775326}
     - target: {fileID: 2679407690171483849, guid: f2975fe983f83f141acb93a45e82e004, type: 3}
       propertyPath: difficultyLevel
       value: 1
@@ -1627,6 +1636,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 847664356491802643, guid: 83438f18c8ccfe44889792fe9e215c4e, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1189372958386897030, guid: 83438f18c8ccfe44889792fe9e215c4e, type: 3}
       propertyPath: m_Pivot.x
       value: 0

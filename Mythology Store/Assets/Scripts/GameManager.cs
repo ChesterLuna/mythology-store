@@ -12,6 +12,11 @@ public class GameManager : MonoBehaviour
 
     private PlayerMover playerMover;
     public int difficultyLevel = 2;
+    public bool miniGameInProgress = false;
+
+    [SerializeField] private GameObject listObject;
+    
+
     public Dictionary<string, GameObject> currentTasksDict = new Dictionary<string, GameObject>();
     public List<string> finishedTasks = new List<string>();
 
@@ -30,6 +35,11 @@ public class GameManager : MonoBehaviour
             ConversationManager.OnConversationStarted += StopMovement;
             ConversationManager.OnConversationEnded += AllowMovement;
         }
+    }
+
+    public void DisableList()
+    {
+        listObject.SetActive(false);
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
