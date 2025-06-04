@@ -8,6 +8,7 @@ TagManager:
   - CreditCard
   - DriversLicense
   - UnoReverseCard
+  - WalletArea
   layers:
   - Default
   - TransparentFX
