@@ -46,5 +46,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: creditcard
+    uniqueID: 2643766907
+    locked: 0
+  - name: Licensecard
+    uniqueID: 2705942871
+    locked: 0
+  - name: UNOCard
+    uniqueID: 3397106187
+    locked: 0
   m_RenderingLayers:
   - Default

@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using System;
 
 public class CardHover : MonoBehaviour
 {
@@ -14,13 +16,30 @@ public class CardHover : MonoBehaviour
     public enum CardPosition { Wallet, Revealed, Pay };
     public CardPosition currentPosition = CardPosition.Wallet;
 
+    public static List<CardHover> AllCards = new List<CardHover>();
+    public static event Action<CardHover> OnCardInitiatedMove;
+    void OnEnable()
+    {
+        if (!AllCards.Contains(this))
+        {
+            AllCards.Add(this);
+        }
+        OnCardInitiatedMove += HandleFocusCardChanged;
+    }
+    void OnDisable()
+    {
+        AllCards.Remove(this);
+        OnCardInitiatedMove -= HandleFocusCardChanged;
+    }
     void Start()
     {
+        
         SnapToCurrentPosition();
     }
 
     void Update()
     {
+        
         if (shouldSlide)
         {
             Vector2 destinationPosition;
@@ -57,6 +76,7 @@ public class CardHover : MonoBehaviour
             return;
         }
         // determine next position and update
+        CardPosition nextPotentialState = currentPosition;
         switch (currentPosition)
         {
             case CardPosition.Wallet:
@@ -70,6 +90,28 @@ public class CardHover : MonoBehaviour
                 break;
         }
         shouldSlide = true;
+        bool isInitiatingAction = (nextPotentialState != currentPosition) || shouldSlide;
+        if (isInitiatingAction)
+        {
+            OnCardInitiatedMove.Invoke(this);
+        }
+    }
+    void HandleFocusCardChanged(CardHover cardThatInitiatedMove)
+    {
+        //if another card is chosen, return card to wallet
+        if (cardThatInitiatedMove != this)
+        {
+            bool needsToReturnToWallet = !(currentPosition == CardPosition.Wallet && !shouldSlide);
+            if (needsToReturnToWallet)
+            {
+                shouldSlide = false;
+                currentPosition = CardPosition.Wallet;
+                if (walletPosition != null)
+                {
+                    transform.position = walletPosition.position; //teleport to wallet
+                }
+            }
+        }
     }
     void SnapToCurrentPosition()
     {

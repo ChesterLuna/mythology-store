@@ -7,15 +7,11 @@ public class POSTerminal : MonoBehaviour
     [SerializeField] GameObject clipPlayer;
 
     // The method must accept a parameter called "paymentMethod" with the data-type "PaymentMethod"
-    // enum PaymentMethodList : int
-    // {
-    //     Credit, Cash, UNOReverse, License
-    // }
-    // // Create a method called "acceptPayment" that returns the data-type "PaymentStatus" (enum)
-    // enum PaymentStatus : int
-    // {
-    //     Accepted, Rejected,
-    // }
+    enum PaymentMethodList
+    {
+        Credit, UNOReverse, License
+    }
+    
     public void ScanCard(ScannableCard card)
     {
 
