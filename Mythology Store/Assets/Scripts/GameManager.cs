@@ -82,6 +82,9 @@ public class GameManager : MonoBehaviour
             Debug.Log("All tasks done");
         }
     }
-    
 
+    internal void TimeFinished()
+    {
+        Debug.Log("Game is done");
+    }
 }
