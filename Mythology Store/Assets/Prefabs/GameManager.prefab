@@ -44,3 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d76b0c76a6ae254ca4eb1dca3c033eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  difficultyLevel: 1
+  miniGameInProgress: 0
+  gamePaused: 0
+  listObject: {fileID: 0}
+  finishedTasks: []

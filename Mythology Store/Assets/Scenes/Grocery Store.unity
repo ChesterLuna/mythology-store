@@ -239,14 +239,6 @@ PrefabInstance:
       propertyPath: listObject
       value: 
       objectReference: {fileID: 1271775326}
-    - target: {fileID: 2679407690171483849, guid: f2975fe983f83f141acb93a45e82e004, type: 3}
-      propertyPath: difficultyLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2679407690171483849, guid: f2975fe983f83f141acb93a45e82e004, type: 3}
-      propertyPath: miniGameInProgress
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2883922492125593393, guid: f2975fe983f83f141acb93a45e82e004, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.6120932
@@ -576,10 +568,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 1534257800568872411, guid: 643f1853cd7a8be4e8069cf8fc51d68a, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 2226901457223774826, guid: 643f1853cd7a8be4e8069cf8fc51d68a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.88
@@ -685,8 +673,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Follow Camera
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5963679850873975508, guid: 83224ae1ed4929d418d555e03508c260, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -753,11 +740,11 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 8638697214950401869}
+  - {fileID: 8319785261343155106}
   - {fileID: 619394802}
   - {fileID: 1698837286}
-  - {fileID: 2357500844631286475}
   - {fileID: 6214739715109446635}
+  - {fileID: 2357500844631286475}
   - {fileID: 7086426397982977946}
-  - {fileID: 8319785261343155106}
   - {fileID: 4908314342124991002}
   - {fileID: 3506758683868577909}
