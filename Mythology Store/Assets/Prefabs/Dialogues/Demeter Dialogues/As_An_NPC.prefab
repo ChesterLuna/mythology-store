@@ -54,7 +54,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 393ff16a030c8ba4d9679143fa4ecffa, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &5244689110718995036
 MonoBehaviour:
@@ -73,7 +73,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 1
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 393ff16a030c8ba4d9679143fa4ecffa, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &6700089253871077534
 MonoBehaviour:
@@ -92,7 +92,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 2
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 393ff16a030c8ba4d9679143fa4ecffa, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &803153315864212909
 MonoBehaviour:
@@ -111,7 +111,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 3
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 393ff16a030c8ba4d9679143fa4ecffa, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &8881779749291654481
 MonoBehaviour:
@@ -130,7 +130,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 4
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 393ff16a030c8ba4d9679143fa4ecffa, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &8084129421515650390
 MonoBehaviour:
@@ -149,7 +149,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 5
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 393ff16a030c8ba4d9679143fa4ecffa, type: 3}
   Audio: {fileID: 0}
 --- !u!1 &8830797531258530872
 GameObject:
@@ -179,7 +179,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.67524827, y: 0.41441432, z: -0.07235325}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 509675431337869625}
@@ -197,17 +197,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa23fdd345470e642a87960b0e81e477, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":254.834808,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Grain,
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":245.999969,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Grain,
     oh so beautiful and plenty!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Demeter,
-    Lord of All Blossoms","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":267.3044,"yPos":121.947845},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Golden
+    Lord of All Blossoms","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":258.469574,"yPos":121.947845},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Golden
     like your mother! Loved by the wind all along!\r\n","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Demeter,
-    Lord of All Blossoms","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":269.8088,"yPos":222.956512},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Chaff
+    Lord of All Blossoms","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":260.973969,"yPos":222.956512},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Chaff
     may bother you, blight may bother you and so may the pests of all worlds,\r\n","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Demeter,
-    Lord of All Blossoms","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":277.321869,"yPos":318.956543},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"But
+    Lord of All Blossoms","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":268.48703,"yPos":318.956543},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"But
     you shall be saved by the wind for the wind saves all my children!\r\n","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Demeter,
-    Lord of All Blossoms","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":270.6436,"yPos":416.6261},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"And
+    Lord of All Blossoms","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":261.808746,"yPos":416.6261},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"And
     you are mine mine mine!\r\n","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Demeter,
-    Lord of All Blossoms","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":266.469635,"yPos":515.1305},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Mine!","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Demeter,
+    Lord of All Blossoms","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":257.6348,"yPos":515.1305},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Mine!","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Demeter,
     Lord of All Blossoms","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
 --- !u!114 &5132055175345756070
 MonoBehaviour:
@@ -222,21 +222,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 6
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":254.834808,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Grain,
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":245.999969,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Grain,
     oh so beautiful and plenty!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Demeter,
-    Lord of All Blossoms","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":267.3044,"yPos":121.947845},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Golden
+    Lord of All Blossoms","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":258.469574,"yPos":121.947845},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Golden
     like your mother! Loved by the wind all along!\r\n","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Demeter,
-    Lord of All Blossoms","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":269.8088,"yPos":222.956512},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Chaff
+    Lord of All Blossoms","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":260.973969,"yPos":222.956512},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Chaff
     may bother you, blight may bother you and so may the pests of all worlds,\r\n","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Demeter,
-    Lord of All Blossoms","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":277.321869,"yPos":318.956543},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"But
+    Lord of All Blossoms","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":268.48703,"yPos":318.956543},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"But
     you shall be saved by the wind for the wind saves all my children!\r\n","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Demeter,
-    Lord of All Blossoms","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":270.6436,"yPos":416.6261},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"And
+    Lord of All Blossoms","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":261.808746,"yPos":416.6261},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"And
     you are mine mine mine!\r\n","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Demeter,
-    Lord of All Blossoms","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":266.469635,"yPos":515.1305},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Mine!","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Demeter,
+    Lord of All Blossoms","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":257.6348,"yPos":515.1305},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Mine!","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Demeter,
     Lord of All Blossoms","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: Demeter, Lord of All Blossoms
-  DefaultSprite: {fileID: 0}
+  DefaultSprite: {fileID: 21300000, guid: 393ff16a030c8ba4d9679143fa4ecffa, type: 3}
   DefaultFont: {fileID: 0}
   NodeSerializedDataList:
   - {fileID: 2855921997279419078}
