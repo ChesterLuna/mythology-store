@@ -51,7 +51,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 22caf27849906f54b9abff6a85b121bc, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &3097936580580704043
 MonoBehaviour:
@@ -70,7 +70,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 3
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 22caf27849906f54b9abff6a85b121bc, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &969602799192018974
 MonoBehaviour:
@@ -89,7 +89,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 4
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 22caf27849906f54b9abff6a85b121bc, type: 3}
   Audio: {fileID: 0}
 --- !u!1 &4225502411788358385
 GameObject:
@@ -137,12 +137,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa23fdd345470e642a87960b0e81e477, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":true,"xPos":254.834808,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Huh!?
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":true,"xPos":245.999969,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Huh!?
     ","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wukong,
-    The Monkey King","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":260.739136,"yPos":148.660889},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    The Monkey King","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":251.9043,"yPos":148.660889},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"I
     am not stealing these delicious peaches with immortal taste that are available
     for 9.99 Jades a gram!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wukong,
-    The Monkey King","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":263.96524,"yPos":266.365234},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Who
+    The Monkey King","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":255.1304,"yPos":266.365234},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Who
     would dare steal these Delicious Peaches Sold for Dirt Cheap!\r\n","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wukong,
     The Monkey King","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
 --- !u!114 &4949804446665589267
@@ -158,17 +158,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 5
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":true,"xPos":254.834808,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Huh!?
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":true,"xPos":245.999969,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Huh!?
     ","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wukong,
-    The Monkey King","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":260.739136,"yPos":148.660889},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    The Monkey King","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":251.9043,"yPos":148.660889},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"I
     am not stealing these delicious peaches with immortal taste that are available
     for 9.99 Jades a gram!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wukong,
-    The Monkey King","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":263.96524,"yPos":266.365234},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Who
+    The Monkey King","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":255.1304,"yPos":266.365234},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Who
     would dare steal these Delicious Peaches Sold for Dirt Cheap!\r\n","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wukong,
     The Monkey King","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: Wukong, The Monkey King
-  DefaultSprite: {fileID: 0}
+  DefaultSprite: {fileID: 21300000, guid: 22caf27849906f54b9abff6a85b121bc, type: 3}
   DefaultFont: {fileID: 0}
   NodeSerializedDataList:
   - {fileID: 4528266570587390760}

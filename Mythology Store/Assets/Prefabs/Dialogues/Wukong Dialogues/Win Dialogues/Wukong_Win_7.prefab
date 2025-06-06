@@ -50,7 +50,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 22caf27849906f54b9abff6a85b121bc, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &8054374908162035340
 MonoBehaviour:
@@ -69,7 +69,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 1
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 22caf27849906f54b9abff6a85b121bc, type: 3}
   Audio: {fileID: 0}
 --- !u!1 &8267654456098186551
 GameObject:
@@ -117,9 +117,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa23fdd345470e642a87960b0e81e477, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":254.834808,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Okay
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":245.999969,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Okay
     but next time wack it with a stick!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wukong,
-    The Monkey King","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":282.800018,"yPos":146.15654},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Like
+    The Monkey King","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":273.965179,"yPos":146.15654},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Like
     a really big one!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wukong,
     The Monkey King","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
 --- !u!114 &627861867480822962
@@ -135,14 +135,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 2
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":254.834808,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Okay
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":245.999969,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Okay
     but next time wack it with a stick!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wukong,
-    The Monkey King","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":282.800018,"yPos":146.15654},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Like
+    The Monkey King","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":273.965179,"yPos":146.15654},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Like
     a really big one!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wukong,
     The Monkey King","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: Wukong, The Monkey King
-  DefaultSprite: {fileID: 0}
+  DefaultSprite: {fileID: 21300000, guid: 22caf27849906f54b9abff6a85b121bc, type: 3}
   DefaultFont: {fileID: 0}
   NodeSerializedDataList:
   - {fileID: 5139722153088611412}
