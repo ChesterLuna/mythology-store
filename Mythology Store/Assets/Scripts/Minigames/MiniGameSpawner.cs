@@ -6,8 +6,10 @@ using UnityEngine;
 public class MiniGameSpawner : MonoBehaviour
 {
     private MiniGameContainer[] miniGameContainers;
+    private NPCContainer[] NPCContainers;
     private Dictionary<string, MiniGameContainer> miniGamesDict;
     private int difficultyLevel = 2;
+    [SerializeField] private int NPCExtras = 2;
 
     [Header("List")]
     [SerializeField] private Transform listTransform;
@@ -19,6 +21,7 @@ public class MiniGameSpawner : MonoBehaviour
     {
         miniGamesDict = new Dictionary<string, MiniGameContainer>();
         miniGameContainers = GetComponentsInChildren<MiniGameContainer>();
+        NPCContainers = GetComponentsInChildren<NPCContainer>();
 
         difficultyLevel = GameManager.Instance.difficultyLevel;
 
@@ -32,6 +35,19 @@ public class MiniGameSpawner : MonoBehaviour
 
         SpawnEmptyTasks();
 
+        SpawnNPCs(NPCExtras);
+
+    }
+
+    private void SpawnNPCs(int amount)
+    {
+        List<int> ids = Enumerable.Range(0, NPCContainers.Length).ToList<int>();
+        Debug.Log(ids);
+        List<int> NPCsToSpawn = ShuffleList(ids);
+        for (int i = 0; i < amount; i++)
+        {
+            NPCContainers[NPCsToSpawn[i]].gameObject.SetActive(true);
+        }
     }
 
     private void SpawnRandomTasks(int amount)
