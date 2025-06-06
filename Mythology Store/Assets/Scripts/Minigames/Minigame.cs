@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using DialogueEditor;
 using UnityEngine;
 
 public abstract class Minigame : MonoBehaviour
@@ -9,6 +10,8 @@ public abstract class Minigame : MonoBehaviour
     [SerializeField] protected AudioClip winSound;
     [SerializeField] protected GameObject clipPlayer;
     [SerializeField] protected GameObject winScreen;
+    [SerializeField] protected bool hasEndingDialogue = true;
+    private NPCConversation endingDialogue;
 
     [SerializeField] public string miniGameName;
 
@@ -17,6 +20,8 @@ public abstract class Minigame : MonoBehaviour
     {
         GameManager.Instance.AllowPlayerMovement(false);
         GameManager.Instance.miniGameInProgress = true;
+
+        TryGetComponent<NPCConversation>(out endingDialogue);
     }
 
     protected void Update()
@@ -43,12 +48,20 @@ public abstract class Minigame : MonoBehaviour
 
         yield return new WaitForSeconds(winSound.length);
 
-        GameManager.Instance.AllowPlayerMovement(true);
         GameManager.Instance.FinishedMiniGame(miniGameName);
         GameManager.Instance.miniGameInProgress = false;
 
+        if (hasEndingDialogue && endingDialogue != null)
+        {
+            ConversationManager.Instance.StartConversation(endingDialogue);
+            GameManager.Instance.DisableList();
+            ConversationManager.OnConversationEnded += GameManager.Instance.AllowMovement;
+        }
+        else
+        {
+            GameManager.Instance.AllowPlayerMovement(true);
+        }
+
         Destroy(this.gameObject);
-
     }
-
 }
