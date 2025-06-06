@@ -148,7 +148,10 @@ namespace DialogueEditor
                 {
                     if (conversation.SpeechNodes != null)
                         for (int i = 0; i < conversation.SpeechNodes.Count; i++)
+                        {
                             conversation.SpeechNodes[i].DeserializeAssetData(this);
+                            conversation.SpeechNodes[i].Icon = DefaultSprite;
+                        }
 
                     if (conversation.Options != null)
                         for (int i = 0; i < conversation.Options.Count; i++)
