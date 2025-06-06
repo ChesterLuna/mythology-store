@@ -55,7 +55,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 6c108f3f8290a124580ab3f5356cfb0d, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &7614374877669329172
 MonoBehaviour:
@@ -74,7 +74,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 1
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 6c108f3f8290a124580ab3f5356cfb0d, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1868201986671574642
 MonoBehaviour:
@@ -93,7 +93,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 2
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 6c108f3f8290a124580ab3f5356cfb0d, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &4372908958358365231
 MonoBehaviour:
@@ -112,7 +112,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 3
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 6c108f3f8290a124580ab3f5356cfb0d, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1941383448787783607
 MonoBehaviour:
@@ -131,7 +131,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 4
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 6c108f3f8290a124580ab3f5356cfb0d, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &3761415001244275254
 MonoBehaviour:
@@ -150,7 +150,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 5
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 6c108f3f8290a124580ab3f5356cfb0d, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &6552896307779141799
 MonoBehaviour:
@@ -169,7 +169,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 6
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 6c108f3f8290a124580ab3f5356cfb0d, type: 3}
   Audio: {fileID: 0}
 --- !u!1 &3348432643381633135
 GameObject:
@@ -217,19 +217,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa23fdd345470e642a87960b0e81e477, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":317.443481,\"yPos\":72.92183},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Killing
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":245.999969,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Killing
     can never be moral,\\r\\n\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Varuna,
-    Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":302.365234,\"yPos\":188.73056},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
+    Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":230.921722,\"yPos\":137.808731},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
     divine order always asks to build bridges,\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Varuna,
-    Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":323.2348,\"yPos\":288.069641},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Cursing
+    Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":251.79129,\"yPos\":237.147812},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Cursing
     the sea won\u2019t help you cross it, \\r\\n\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Varuna,
-    Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":302.365234,\"yPos\":406.608826},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Blaming
+    Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":230.921722,\"yPos\":355.687},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Blaming
     the wind won\u2019t help you fly,\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Varuna,
-    Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":292.347839,\"yPos\":500.104462},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lanka
+    Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":220.904327,\"yPos\":449.182617},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lanka
     is always there,\\r\\n\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Varuna,
-    Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":304.034851,\"yPos\":610.295654},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
+    Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":232.591339,\"yPos\":559.37384},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
     path to it, \\r\\n\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Varuna,
-    Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":310.713,\"yPos\":727.9999},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Is
+    Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":239.2695,\"yPos\":677.078064},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Is
     up to you.\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Varuna,
     Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
 --- !u!114 &2468962311075922593
@@ -245,24 +245,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 7
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":317.443481,\"yPos\":72.92183},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Killing
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":245.999969,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Killing
     can never be moral,\\r\\n\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Varuna,
-    Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":302.365234,\"yPos\":188.73056},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
+    Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":230.921722,\"yPos\":137.808731},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
     divine order always asks to build bridges,\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Varuna,
-    Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":323.2348,\"yPos\":288.069641},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Cursing
+    Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":251.79129,\"yPos\":237.147812},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Cursing
     the sea won\u2019t help you cross it, \\r\\n\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Varuna,
-    Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":302.365234,\"yPos\":406.608826},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Blaming
+    Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":230.921722,\"yPos\":355.687},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Blaming
     the wind won\u2019t help you fly,\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Varuna,
-    Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":292.347839,\"yPos\":500.104462},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lanka
+    Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":220.904327,\"yPos\":449.182617},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lanka
     is always there,\\r\\n\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Varuna,
-    Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":304.034851,\"yPos\":610.295654},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
+    Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":232.591339,\"yPos\":559.37384},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
     path to it, \\r\\n\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Varuna,
-    Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":310.713,\"yPos\":727.9999},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Is
+    Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":239.2695,\"yPos\":677.078064},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Is
     up to you.\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Varuna,
     Sovereign of Truth\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: Varuna, Sovereign of Truth
-  DefaultSprite: {fileID: 0}
+  DefaultSprite: {fileID: 21300000, guid: 6c108f3f8290a124580ab3f5356cfb0d, type: 3}
   DefaultFont: {fileID: 0}
   NodeSerializedDataList:
   - {fileID: 3552295834992542354}
