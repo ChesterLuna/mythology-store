@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     private PlayerMover playerMover;
     public int difficultyLevel = 2;
     public bool miniGameInProgress = false;
+    public bool gamePaused = false;
 
     [SerializeField] private GameObject listObject;
     
@@ -35,6 +36,11 @@ public class GameManager : MonoBehaviour
             ConversationManager.OnConversationStarted += StopMovement;
             ConversationManager.OnConversationEnded += AllowMovement;
         }
+    }
+
+    public void PauseGame()
+    {
+        gamePaused = true;
     }
 
     public void DisableList()

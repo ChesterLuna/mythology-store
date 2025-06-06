@@ -17,6 +17,7 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
+        gamePaused = GameManager.Instance.gamePaused;
         if (timeLeft == 0) return;
         if (!gamePaused)
         {

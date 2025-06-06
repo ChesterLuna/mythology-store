@@ -486,7 +486,7 @@ namespace DialogueEditor
             }
             else
             {
-                DialogueText.font = null;
+                // DialogueText.font = null;
             }
 
             // Set name
