@@ -46,20 +46,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa23fdd345470e642a87960b0e81e477, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":295.599976,\"yPos\":-114.800232},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(in
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":245.999969,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(in
     unison) Hello are you interested in the H.C. Odinum rewards card? It\u2019s certified
     Odin's choice! Guaranteed! \",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Huldufolk,
-    The Hidden\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":316.417358,\"yPos\":-0.660827637},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You\u2019ll
+    The Hidden\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":266.817352,\"yPos\":136.1394},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You\u2019ll
     get discounts on all Odin\u2019s choice items, and we\u2019ll definitely not
     not not not not not not not not not not not not not not not not not not not not
     steal your data!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Huldufolk,
-    The Hidden\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":285.5304,\"yPos\":130.400024},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"We
+    The Hidden\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":235.930389,\"yPos\":267.200256},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"We
     even have an app! You can buy groceries, fuel, golden apples, medicine, makeup,
     anything you may want!\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Huldufolk,
-    The Hidden\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":260.486938,\"yPos\":263.13092},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"please
+    The Hidden\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":210.886932,\"yPos\":399.931152},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"please
     please please please please please please please please please please please
     please please please please please please please please please please sign up!\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Huldufolk,
-    The Hidden\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":247.96521,\"yPos\":371.6527},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"By
+    The Hidden\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":198.3652,\"yPos\":508.452942},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"By
     Odin\u2019s eyebrow it\u2019s good for you!\\r\\n\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Huldufolk,
     The Hidden\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
 --- !u!114 &9172447965710574679
@@ -75,20 +75,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 5
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":295.599976,\"yPos\":-114.800232},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(in
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":245.999969,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(in
     unison) Hello are you interested in the H.C. Odinum rewards card? It\u2019s certified
     Odin's choice! Guaranteed! \",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Huldufolk,
-    The Hidden\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":316.417358,\"yPos\":-0.660827637},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You\u2019ll
+    The Hidden\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":266.817352,\"yPos\":136.1394},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You\u2019ll
     get discounts on all Odin\u2019s choice items, and we\u2019ll definitely not
     not not not not not not not not not not not not not not not not not not not not
     steal your data!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Huldufolk,
-    The Hidden\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":285.5304,\"yPos\":130.400024},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"We
+    The Hidden\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":235.930389,\"yPos\":267.200256},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"We
     even have an app! You can buy groceries, fuel, golden apples, medicine, makeup,
     anything you may want!\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Huldufolk,
-    The Hidden\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":260.486938,\"yPos\":263.13092},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"please
+    The Hidden\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":210.886932,\"yPos\":399.931152},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"please
     please please please please please please please please please please please
     please please please please please please please please please please sign up!\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Huldufolk,
-    The Hidden\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":247.96521,\"yPos\":371.6527},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"By
+    The Hidden\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":198.3652,\"yPos\":508.452942},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"By
     Odin\u2019s eyebrow it\u2019s good for you!\\r\\n\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Huldufolk,
     The Hidden\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
@@ -159,7 +159,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 2043cfa26fd236e43a4d642c4586f7ee, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &6367569444191805204
 MonoBehaviour:
@@ -178,7 +178,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 1
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 2043cfa26fd236e43a4d642c4586f7ee, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &7830614566774224922
 MonoBehaviour:
@@ -197,7 +197,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 2
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 2043cfa26fd236e43a4d642c4586f7ee, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &6940483266332682339
 MonoBehaviour:
@@ -216,7 +216,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 3
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 2043cfa26fd236e43a4d642c4586f7ee, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1776374530468596575
 MonoBehaviour:
@@ -235,5 +235,5 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 4
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 2043cfa26fd236e43a4d642c4586f7ee, type: 3}
   Audio: {fileID: 0}

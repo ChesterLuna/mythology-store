@@ -54,7 +54,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 22caf27849906f54b9abff6a85b121bc, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &7628867417858244889
 MonoBehaviour:
@@ -73,7 +73,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 1
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 22caf27849906f54b9abff6a85b121bc, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &826972932859754778
 MonoBehaviour:
@@ -92,7 +92,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 2
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 22caf27849906f54b9abff6a85b121bc, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &3299876345008533092
 MonoBehaviour:
@@ -111,7 +111,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 3
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 22caf27849906f54b9abff6a85b121bc, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &2788810385741765280
 MonoBehaviour:
@@ -130,7 +130,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 4
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 22caf27849906f54b9abff6a85b121bc, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &6130764411991936136
 MonoBehaviour:
@@ -149,7 +149,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 5
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 22caf27849906f54b9abff6a85b121bc, type: 3}
   Audio: {fileID: 0}
 --- !u!1 &7508040164057705499
 GameObject:

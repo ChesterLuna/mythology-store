@@ -147,7 +147,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 3a8f8b996c105d9419ee301005a89bc0, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &3243309555103726385
 MonoBehaviour:
@@ -166,7 +166,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 1
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 3a8f8b996c105d9419ee301005a89bc0, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &8332633235458569514
 MonoBehaviour:
@@ -185,7 +185,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 2
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 3a8f8b996c105d9419ee301005a89bc0, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &3657508691394342492
 MonoBehaviour:
@@ -204,7 +204,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 3
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 3a8f8b996c105d9419ee301005a89bc0, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &2419550070750257285
 MonoBehaviour:
@@ -223,5 +223,5 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 4
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 3a8f8b996c105d9419ee301005a89bc0, type: 3}
   Audio: {fileID: 0}
