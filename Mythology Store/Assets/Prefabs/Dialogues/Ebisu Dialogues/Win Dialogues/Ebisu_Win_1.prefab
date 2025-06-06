@@ -46,11 +46,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa23fdd345470e642a87960b0e81e477, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":279.043518,"yPos":63.7391052},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Glad
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":245.999969,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Glad
     you could find what you were looking for!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ebisu,
-    The Ocean''s Fortune","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":292.347839,"yPos":159.513031},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"*slaps
+    The Ocean''s Fortune","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":259.3043,"yPos":117.773926},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"*slaps
     top of belly*","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ebisu,
-    The Ocean''s Fortune","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":308.20874,"yPos":266.3652},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+    The Ocean''s Fortune","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":275.1652,"yPos":224.6261},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"You
     wanna try that?\r\n","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ebisu,
     The Ocean''s Fortune","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
 --- !u!114 &3264249252036547146
@@ -66,16 +66,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 3
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":279.043518,"yPos":63.7391052},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Glad
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":245.999969,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Glad
     you could find what you were looking for!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ebisu,
-    The Ocean''s Fortune","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":292.347839,"yPos":159.513031},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"*slaps
+    The Ocean''s Fortune","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":259.3043,"yPos":117.773926},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"*slaps
     top of belly*","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ebisu,
-    The Ocean''s Fortune","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":308.20874,"yPos":266.3652},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+    The Ocean''s Fortune","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":275.1652,"yPos":224.6261},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"You
     wanna try that?\r\n","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ebisu,
     The Ocean''s Fortune","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: Ebisu, The Ocean's Fortune
-  DefaultSprite: {fileID: 0}
+  DefaultSprite: {fileID: 21300000, guid: 3a8f8b996c105d9419ee301005a89bc0, type: 3}
   DefaultFont: {fileID: 0}
   NodeSerializedDataList:
   - {fileID: 3345246227156736190}
@@ -137,7 +137,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 3a8f8b996c105d9419ee301005a89bc0, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &933815588986261929
 MonoBehaviour:
@@ -156,7 +156,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 1
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 3a8f8b996c105d9419ee301005a89bc0, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &7531433673992655811
 MonoBehaviour:
@@ -175,5 +175,5 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 2
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 3a8f8b996c105d9419ee301005a89bc0, type: 3}
   Audio: {fileID: 0}
