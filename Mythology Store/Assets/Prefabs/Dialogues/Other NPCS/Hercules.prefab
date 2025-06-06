@@ -46,15 +46,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa23fdd345470e642a87960b0e81e477, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":297.40863,\"yPos\":-145.7913},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Slayed
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":245.999969,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Slayed
     the Nemean lion, Hydra, Bronze feathered birds, captured Cerberus, all for what?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Hercules,
-    The Victor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":319.895569,\"yPos\":-14.1217346},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Now
+    The Victor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":268.4869,\"yPos\":153.669571},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Now
     I'm stuck here in Tantalus\u2019s new Tartarus, buying food for the gods!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Hercules,
-    The Victor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":333.252075,\"yPos\":99.40871},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
+    The Victor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":281.8434,\"yPos\":267.2},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
     that long necked creature keeps popping up and making me mad\u2026\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Hercules,
-    The Victor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":341.5999,\"yPos\":195.408722},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Is
+    The Victor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":290.191254,\"yPos\":363.2},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Is
     it Hera again or am I just going crazy?\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Hercules,
-    The Victor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":260.6261,\"yPos\":322.295715},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
+    The Victor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":209.217438,\"yPos\":490.087036},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
     please gods, whoever is listening, keep those eleves away from me!\\r\\n\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Hercules,
     The Victor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
 --- !u!114 &5008205069507746479
@@ -70,20 +70,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 5
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":297.40863,\"yPos\":-145.7913},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Slayed
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":245.999969,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Slayed
     the Nemean lion, Hydra, Bronze feathered birds, captured Cerberus, all for what?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Hercules,
-    The Victor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":319.895569,\"yPos\":-14.1217346},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Now
+    The Victor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":268.4869,\"yPos\":153.669571},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Now
     I'm stuck here in Tantalus\u2019s new Tartarus, buying food for the gods!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Hercules,
-    The Victor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":333.252075,\"yPos\":99.40871},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
+    The Victor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":281.8434,\"yPos\":267.2},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
     that long necked creature keeps popping up and making me mad\u2026\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Hercules,
-    The Victor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":341.5999,\"yPos\":195.408722},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Is
+    The Victor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":290.191254,\"yPos\":363.2},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Is
     it Hera again or am I just going crazy?\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Hercules,
-    The Victor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":260.6261,\"yPos\":322.295715},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
+    The Victor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":209.217438,\"yPos\":490.087036},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
     please gods, whoever is listening, keep those eleves away from me!\\r\\n\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Hercules,
     The Victor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: Hercules, The Victor
-  DefaultSprite: {fileID: 0}
+  DefaultSprite: {fileID: 21300000, guid: 5d302da809c7ec143a0ce8bfb963ebdd, type: 3}
   DefaultFont: {fileID: 0}
   NodeSerializedDataList:
   - {fileID: 8007854455969995254}
@@ -149,7 +149,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 5d302da809c7ec143a0ce8bfb963ebdd, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &6160836154967216531
 MonoBehaviour:
@@ -168,7 +168,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 1
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 5d302da809c7ec143a0ce8bfb963ebdd, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &837548188083497039
 MonoBehaviour:
@@ -187,7 +187,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 2
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 5d302da809c7ec143a0ce8bfb963ebdd, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1212639899642383056
 MonoBehaviour:
@@ -206,7 +206,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 3
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 5d302da809c7ec143a0ce8bfb963ebdd, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &3261691000244740121
 MonoBehaviour:
@@ -225,5 +225,5 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 4
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 5d302da809c7ec143a0ce8bfb963ebdd, type: 3}
   Audio: {fileID: 0}
