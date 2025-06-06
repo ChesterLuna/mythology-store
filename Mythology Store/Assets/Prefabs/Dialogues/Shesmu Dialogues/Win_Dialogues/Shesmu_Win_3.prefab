@@ -52,7 +52,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: a0455c13e8fab844685826ea6e9dbfb6, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &4863747205884237566
 MonoBehaviour:
@@ -71,7 +71,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 1
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: a0455c13e8fab844685826ea6e9dbfb6, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &6008242311564257708
 MonoBehaviour:
@@ -90,7 +90,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 2
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: a0455c13e8fab844685826ea6e9dbfb6, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &2161728732208694604
 MonoBehaviour:
@@ -109,7 +109,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 3
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: a0455c13e8fab844685826ea6e9dbfb6, type: 3}
   Audio: {fileID: 0}
 --- !u!1 &6464894382008493445
 GameObject:
@@ -157,13 +157,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa23fdd345470e642a87960b0e81e477, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":267.3566,\"yPos\":11.9826508},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":245.999969,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"
     Holy blood in holy death,\\r\\n\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Shesmu,
-    The God Butcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":231.408783,\"yPos\":152.000076},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Human
+    The God Butcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":210.052155,\"yPos\":162.017426},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Human
     blood in human life,\\r\\n\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Shesmu,
-    The God Butcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":215.547913,\"yPos\":272.2088},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"All
+    The God Butcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":194.191284,\"yPos\":282.226135},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"All
     becomes but red wine,\\r\\n\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Shesmu,
-    The God Butcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":201.3566,\"yPos\":380.730469},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"To
+    The God Butcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":179.999969,\"yPos\":390.7478},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"To
     my knife\u2026\\r\\n\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Shesmu,
     The God Butcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
 --- !u!114 &8249009229796232046
@@ -179,18 +179,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 4
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":267.3566,\"yPos\":11.9826508},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":245.999969,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"
     Holy blood in holy death,\\r\\n\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Shesmu,
-    The God Butcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":231.408783,\"yPos\":152.000076},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Human
+    The God Butcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":210.052155,\"yPos\":162.017426},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Human
     blood in human life,\\r\\n\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Shesmu,
-    The God Butcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":215.547913,\"yPos\":272.2088},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"All
+    The God Butcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":194.191284,\"yPos\":282.226135},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"All
     becomes but red wine,\\r\\n\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Shesmu,
-    The God Butcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":201.3566,\"yPos\":380.730469},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"To
+    The God Butcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":179.999969,\"yPos\":390.7478},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"To
     my knife\u2026\\r\\n\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Shesmu,
     The God Butcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: Shesmu, The God Butcher
-  DefaultSprite: {fileID: 0}
+  DefaultSprite: {fileID: 21300000, guid: a0455c13e8fab844685826ea6e9dbfb6, type: 3}
   DefaultFont: {fileID: 0}
   NodeSerializedDataList:
   - {fileID: 4165213473007096430}
