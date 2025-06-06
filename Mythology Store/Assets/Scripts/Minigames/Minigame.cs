@@ -21,7 +21,10 @@ public abstract class Minigame : MonoBehaviour
         GameManager.Instance.AllowPlayerMovement(false);
         GameManager.Instance.miniGameInProgress = true;
 
-        TryGetComponent<NPCConversation>(out endingDialogue);
+        if (hasEndingDialogue)
+        {
+            endingDialogue = GetComponentInChildren<NPCConversation>();
+        }
     }
 
     protected void Update()
@@ -55,7 +58,6 @@ public abstract class Minigame : MonoBehaviour
         {
             ConversationManager.Instance.StartConversation(endingDialogue);
             GameManager.Instance.DisableList();
-            ConversationManager.OnConversationEnded += GameManager.Instance.AllowMovement;
         }
         else
         {
