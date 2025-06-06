@@ -1,87 +1,39 @@
 using UnityEngine;
+using TMPro; // Add this to display messages
 
 public class POSTerminal : MonoBehaviour
 {
+    [SerializeField] private AudioClip beepSound;
+    private AudioSource audioSource;
+    [SerializeField] private TMP_Text terminalDisplayText; 
 
-    [SerializeField] AudioClip beepSound;
-    [SerializeField] GameObject clipPlayer;
-
-    // The method must accept a parameter called "paymentMethod" with the data-type "PaymentMethod"
-    enum PaymentMethodList
+    void Awake()
     {
-        Credit, UNOReverse, License
-    }
-    
-    public void ScanCard(ScannableCard card)
-    {
-
-        card.ScanCard();
-        Instantiate(clipPlayer).GetComponent<AudioSource>().PlayOneShot(beepSound);
-    }
-
-    // "Insert, swipe, or tap your card"
-    // "Enter PIN"
-    // "Remove card"
-    // "Select account: [Checking / Savings / Credit]"
-    // "Do you want cash back? [Yes / No]"
-    // "Enter cash back amount"
-    // "Transaction approved"
-    // "Transaction declined"
-    // "Signature required"
-    // "Please wait..."
-    // "Thank you"
-    public void CreditCard()
-    {
-        Debug.Log("Payment Accepted");
-    }
-
-    public void UnoReverseCard()
-    {
-        Debug.Log("Reverse Payment... THEIF");
+        // A better way to handle audio playback
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        ScannableCard card;
-        if (collision.TryGetComponent<ScannableCard>(out card))
+        // Checks if the entering object has a ScannableCard script attached.
+        if (collision.TryGetComponent<ScannableCard>(out ScannableCard card))
         {
-            ScanCard(card);
-            Debug.Log("card read");
-
+            PlayBeep();
+            DisplayMessage("Processing...");
+            card.ProcessCard(this); // Delegate the logic to the card
         }
-        if (collision.CompareTag("CreditCard"))
-        {
-            CreditCard();
-        }
-        else if (collision.CompareTag("UnoReverseCard"))
-        {
-            UnoReverseCard();
-        }
-        else
-        {
-            Debug.Log("Scan Failed");
-        }
-        
-
     }
-    
-    
-    /*
-    if (player.getPaymentStatus() == PaymentStatus.Accept) 
-    { 
-    tellPlayer("Your payment was successful");
+
+    public void PlayBeep()
+    {
+        if (beepSound != null)
+        {
+            audioSource.PlayOneShot(beepSound);
+        }
     }
-    */
 
-    // method for Credit card
-
-    // method for Uno Reverse card
-    // method for Drivers License
-
-    // 
-
-    // create new classes for each triggerable object? 
-    // Ontrigger method on payment machine thingy
-    // method to reveal each card (move its position a certain y while mouse is hovering)
-    // 
+    public void DisplayMessage(string message)
+    {
+        terminalDisplayText.text = message;
+    }
 }
