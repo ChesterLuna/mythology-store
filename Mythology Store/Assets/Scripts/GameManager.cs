@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
     public Dictionary<string, GameObject> currentTasksDict = new Dictionary<string, GameObject>();
     public List<string> finishedTasks = new List<string>();
 
+    public List<GameObject> foodToScan = new List<GameObject>();
+
     private void Awake()
     {
         // Make a singleton
