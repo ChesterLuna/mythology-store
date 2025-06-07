@@ -122,7 +122,7 @@ namespace DialogueEditor
             conversation.Parameters = this.ParameterList;
             json = Jsonify(conversation);
             GetComponent<NPCConversationSaver>().json = json;
-            UnityEditor.PrefabUtility.ApplyPrefabInstance(this.gameObject, UnityEditor.InteractionMode.AutomatedAction);
+            // UnityEditor.PrefabUtility.ApplyPrefabInstance(this.gameObject, UnityEditor.InteractionMode.AutomatedAction);
         }
 
         public Conversation Deserialize()
