@@ -273,6 +273,13 @@ MonoBehaviour:
   winScreen: {fileID: 2916801003325574382, guid: 61da8e4ceb534ac4eb257eeb6fa62e16, type: 3}
   hasEndingDialogue: 1
   miniGameName: 
+  productsToGet:
+  - {fileID: 8721381172220471261, guid: 641aeb2e5b3e0bf49ac1ff117e600fdc, type: 3}
+  - {fileID: 7490511418375650835, guid: 986373c9ba695fa4e8599d92ea36236a, type: 3}
+  - {fileID: 7473944144601963378, guid: dbfa9f5d145e5bd4993b48f00536ff93, type: 3}
+  - {fileID: 8507869720270286134, guid: d14777fc0e64f2842a2d667803dfdd01, type: 3}
+  - {fileID: 9105203143214351203, guid: a5b39216b5f93f64c971c0b86de06525, type: 3}
+  - {fileID: 9052481451495100048, guid: 5982d8b6b169494408ef960b5aa31841, type: 3}
   matchedPairs: 0
   pairsToWin: 3
   firstChoice: {fileID: 0}
@@ -286,6 +293,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ffb10d4f01c1e1d4f8419aeef3d20ba9, type: 2}
   - {fileID: 11400000, guid: 252e12ee076db404db76d1b7087ee941, type: 2}
   cardsParent: {fileID: 7333076485475372494}
+  customBacks: []
 --- !u!1001 &2030622671536685940
 PrefabInstance:
   m_ObjectHideFlags: 0

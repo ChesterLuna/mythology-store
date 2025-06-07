@@ -274,6 +274,13 @@ MonoBehaviour:
   winScreen: {fileID: 2916801003325574382, guid: 61da8e4ceb534ac4eb257eeb6fa62e16, type: 3}
   hasEndingDialogue: 1
   miniGameName: 
+  productsToGet:
+  - {fileID: 5270343849915650880, guid: bbda770cf22d7f947bc74d8cff6fc2c0, type: 3}
+  - {fileID: 2370433568361264512, guid: 97f0f44f26ce9ad4499e757f4dc5ef4f, type: 3}
+  - {fileID: 510750107029002658, guid: d763207d5b2c53e469f0caef5462671a, type: 3}
+  - {fileID: 2285840709449177732, guid: e95fe8426fdbf0341ad5dae9859c4bab, type: 3}
+  - {fileID: 4278845728059466771, guid: db360a32646d9c64794c3f7ec355444b, type: 3}
+  - {fileID: 3424413663394322310, guid: 3433a1bc51ba2da48a6d1ce4f02c0f8e, type: 3}
   matchedPairs: 0
   pairsToWin: 3
   firstChoice: {fileID: 0}
