@@ -15,6 +15,7 @@ public abstract class Minigame : MonoBehaviour
 
     [SerializeField] public string miniGameName;
 
+    [SerializeField] protected GameObject[] productsToGet;
 
     protected void Start()
     {
@@ -53,6 +54,12 @@ public abstract class Minigame : MonoBehaviour
 
         GameManager.Instance.FinishedMiniGame(miniGameName);
         GameManager.Instance.miniGameInProgress = false;
+
+        if (productsToGet != null)
+        {
+            int chosenID = Random.Range(0, productsToGet.Length);
+            GameManager.Instance.foodToScan.Add(productsToGet[chosenID]);
+        }
 
         if (hasEndingDialogue && endingDialogues != null)
         {
