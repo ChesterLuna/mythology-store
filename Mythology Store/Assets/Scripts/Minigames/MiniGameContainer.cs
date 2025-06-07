@@ -8,8 +8,8 @@ public class MiniGameContainer : MonoBehaviour
 
     public void SetMiniGameActive()
     {
-        GetComponentInChildren<MiniGameStarter>().gameObject.SetActive(true);
-        GetComponentInChildren<NPCContainer>().gameObject.SetActive(false);
+        GetComponentInChildren<MiniGameStarter>(true).gameObject.SetActive(true);
+        GetComponentInChildren<NPCContainer>(true).gameObject.SetActive(false);
     }
 
     void Awake()
@@ -23,8 +23,9 @@ public class MiniGameContainer : MonoBehaviour
             toDoListLine = "Get " + miniGameName + ".";
         }
 
-        GetComponentInChildren<MiniGameStarter>().miniGameName = miniGameName;
-        GetComponentInChildren<NPCContainer>().gameObject.SetActive(true);
+        GetComponentInChildren<MiniGameStarter>(true).miniGameName = miniGameName;
+        GetComponentInChildren<MiniGameStarter>(true).gameObject.SetActive(false);
+        GetComponentInChildren<NPCContainer>(true).gameObject.SetActive(true);
     }
 
 }
