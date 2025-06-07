@@ -15,6 +15,7 @@ public class CardHover : MonoBehaviour
 
     public static List<CardHover> AllCards = new List<CardHover>();
     public static event Action<CardHover> OnCardInitiatedMove;
+    public Vector2 destinationPosition;
 
     void OnEnable()
     {
@@ -22,13 +23,13 @@ public class CardHover : MonoBehaviour
         {
             AllCards.Add(this);
         }
-        OnCardInitiatedMove += HandleFocusCardChanged;
+        OnCardInitiatedMove += NewCardChosen;
     }
 
     void OnDisable()
     {
         AllCards.Remove(this);
-        OnCardInitiatedMove -= HandleFocusCardChanged;
+        OnCardInitiatedMove -= NewCardChosen;
     }
 
     void Start()
@@ -40,7 +41,6 @@ public class CardHover : MonoBehaviour
     {
         if (shouldSlide)
         {
-            Vector2 destinationPosition;
             switch (currentPosition)
             {
                 case CardPosition.Revealed:
@@ -58,16 +58,12 @@ public class CardHover : MonoBehaviour
             // Move the card
             transform.position = Vector2.MoveTowards(transform.position, destinationPosition, slideSpeed * Time.deltaTime);
 
-            // Check if card reached destination
             if (Vector2.Distance(transform.position, destinationPosition) < 0.01f)
             {
                 transform.position = destinationPosition;
                 shouldSlide = false;
 
-                // Scan the card when it reaches the pay position ---
-                
             }
-           
         }
     }
 
@@ -84,7 +80,7 @@ public class CardHover : MonoBehaviour
                 break;
             case CardPosition.Revealed:
                 currentPosition = CardPosition.Pay;
-                transform.rotation = Quaternion.Euler(0, 0, 90);
+                transform.rotation = Quaternion.Euler(0, 0, -90);
                 break;
             case CardPosition.Pay:
                 currentPosition = CardPosition.Wallet;
@@ -99,24 +95,26 @@ public class CardHover : MonoBehaviour
         }
     }
 
-    void HandleFocusCardChanged(CardHover cardThatInitiatedMove)
+    // New card has been chosen while one is already in play - return to wallet
+    void NewCardChosen(CardHover cardThatInitiatedMove)
     {
         if (cardThatInitiatedMove != this && !lockedForPinEntry)
         {
             if (currentPosition != CardPosition.Wallet)
             {
                 currentPosition = CardPosition.Wallet;
-                shouldSlide = true; // Slide back to wallet
+                shouldSlide = true; 
                 transform.rotation = Quaternion.Euler(0, 0, 0);
             }
         }
-        //if 
     }
+    
     public void ReturnToWallet()
     {
-        lockedForPinEntry = false; // Unlock the card
+        lockedForPinEntry = false;
         currentPosition = CardPosition.Wallet;
         shouldSlide = true;
+        transform.rotation = Quaternion.Euler(0, 0, 0);
     }
 
     void SnapToCurrentPosition()

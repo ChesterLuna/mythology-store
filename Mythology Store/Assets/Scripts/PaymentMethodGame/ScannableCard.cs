@@ -1,88 +1,98 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-// Define the different ways a card can behave.
 public enum CardType { PIN_Credit, ID_Card, Uno_Reverse }
 
 [RequireComponent(typeof(CardHover))]
 public class ScannableCard : MonoBehaviour
 {
-    
     public CardType type;
-    
-    public string pinCode = "1234";
-
     public GameObject pinPadUI;
-    public UnityEvent OnCorrectPinEntered;
 
     private bool transactionComplete = false;
     private CardHover cardHover;
+    private POSTerminal terminal;
 
     void Awake()
     {
         cardHover = GetComponent<CardHover>();
     }
 
-    // This is the main method called by the POSTerminal when the card is detected.
-    public void ProcessCard(POSTerminal terminal)
+    public void ProcessCard(POSTerminal callingTerminal)
     {
-        // Ignore if already being processed or finished
-        if (transactionComplete || (cardHover != null && cardHover.lockedForPinEntry)) return;
-
-        // Lock the card in place for the duration of the interaction3
-        cardHover.lockedForPinEntry = true;
-
-        // --- The card now determines its own reaction ---
-        switch (type)
+        if (!transactionComplete)
         {
-            case CardType.PIN_Credit:
-                Debug.Log("PIN required.");
-                terminal.DisplayMessage("Enter PIN");
-                InitiatePinEntry();
-                break;
+            this.terminal = callingTerminal;
+            cardHover.lockedForPinEntry = true;
 
-            case CardType.ID_Card:
-                Debug.Log("ID Card Verified.");
-                terminal.DisplayMessage("ID Verified");
-                CompleteTransaction(); 
-                break;
-
-            case CardType.Uno_Reverse:
-                Debug.Log("Reverse Payment... THIEF");
-                terminal.DisplayMessage("UNO REVERSE!");
-                CompleteTransaction();
-                break;
-        }
-    }
-
-    // This private method handles the specific case of needing a PIN
-    private void InitiatePinEntry()
-    {
-        if (pinPadUI != null)
-        {
-            pinPadUI.SetActive(true);
-            PinPad pad = pinPadUI.GetComponent<PinPad>();
-            if (pad != null)
+            switch (type)
             {
-                pad.Initialize(this);
+                case CardType.PIN_Credit:
+                    InitiatePinEntry();
+                    break;
+
+                case CardType.ID_Card:
+                    // CHANGE: Get text from TextUpdater
+                    terminal.DisplayMessage(TextUpdater.Instance.idVerified);
+                    CompleteTransaction(false); // No beep/delay needed for simple verification
+                    break;
+
+                case CardType.Uno_Reverse:
+                    // CHANGE: Get text from TextUpdater
+                    terminal.DisplayMessage(TextUpdater.Instance.unoReverseMessage);
+                    CompleteTransaction(true);
+                    break;
             }
         }
     }
 
-    // Call this when the interaction is finished (PIN correct, tap approved, etc.)
-    public void CompleteTransaction()
+    private void InitiatePinEntry()
     {
-        Debug.Log("Interaction complete.");
-        transactionComplete = true;
-        OnCorrectPinEntered.Invoke();
-        pinPadUI.SetActive(false);
-        cardHover.ReturnToWallet();
+        if (pinPadUI != null && terminal != null)
+        {
+            // CHANGE: Get text from TextUpdater
+            terminal.DisplayMessage(TextUpdater.Instance.enterPin);
+            pinPadUI.SetActive(true);
+            PinPad pad = pinPadUI.GetComponent<PinPad>();
+            if (pad != null)
+            {
+                pad.Initialize(this, this.terminal);
+            }
+        }
     }
 
-    // Call this to cancel a PIN entry
+    public void CompleteTransaction(bool playSoundAndDelay = true)
+    {
+        transactionComplete = true;
+
+        if (pinPadUI != null)
+        {
+            pinPadUI.SetActive(false);
+        }
+
+        // CHANGE: Get text from TextUpdater
+        terminal.DisplayMessage(TextUpdater.Instance.transactionCompleteMessage);
+
+        if (playSoundAndDelay)
+        {
+            terminal.PlayBeep();
+        }
+        
+        // The card can now be returned
+        cardHover.lockedForPinEntry = false;
+    }
+
     public void ResetScanState()
     {
-        pinPadUI.SetActive(false);
+        if (pinPadUI != null)
+        {
+            pinPadUI.SetActive(false);
+        }
+        // CHANGE: Reset terminal text when card is removed prematurely
+        if(terminal != null)
+        {
+            terminal.DisplayMessage(TextUpdater.Instance.insertCard);
+        }
         cardHover.ReturnToWallet();
     }
 }

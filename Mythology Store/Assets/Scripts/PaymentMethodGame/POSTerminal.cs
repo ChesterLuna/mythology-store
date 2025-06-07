@@ -1,25 +1,30 @@
 using UnityEngine;
 using TMPro;
+using System.Collections;
 
 public class POSTerminal : MonoBehaviour
 {
     [SerializeField] private AudioClip beepSound;
     private AudioSource audioSource;
-    [SerializeField] private TMP_Text terminalDisplayText; 
+    [SerializeField] private TMP_Text terminalDisplayText;
 
     void Awake()
     {
-        // A better way to handle audio playback
         audioSource = gameObject.AddComponent<AudioSource>();
+    }
+
+    void Start()
+    {
+        // Set the initial message
+        DisplayMessage(TextUpdater.Instance.insertCard);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        // Checks if the entering object has a ScannableCard script attached.
         if (collision.TryGetComponent<ScannableCard>(out ScannableCard card))
         {
-            PlayBeep();
-            DisplayMessage("Processing...");
+            // Display processing message
+            DisplayMessage(TextUpdater.Instance.processingMessage);
             card.ProcessCard(this); // Delegate the logic to the card
         }
     }
@@ -34,6 +39,9 @@ public class POSTerminal : MonoBehaviour
 
     public void DisplayMessage(string message)
     {
-        terminalDisplayText.text = message;
+        if (terminalDisplayText != null)
+        {
+            terminalDisplayText.text = message;
+        }
     }
 }

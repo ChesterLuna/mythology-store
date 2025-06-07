@@ -1,46 +1,49 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
 
 public class PinPad : MonoBehaviour
 {
-    [SerializeField] private TMP_Text pinDisplayText;
-    [SerializeField] private Button[] numberButtons; // assign buttons 0-9
-    [SerializeField] private Button enterButton;
-    [SerializeField] private Button clearButton;
-    [SerializeField] private Button RemoveCard;
+    [SerializeField]
+    private Button zero, one, two, three, four, five, six, seven, eight, nine, enterButton, clearButton, RemoveCard;
 
     [SerializeField] private int maxPinLength = 4;
 
     private string currentPin = "";
     private ScannableCard currentCard;
-    CardHover cardHover;
+    private POSTerminal currentTerminal;
 
     void Awake()
     {
-        // listeners for control buttons
-        for (int i = 0; i < numberButtons.Length; i++)
-        {
-            string digit = numberButtons[i].name;
-            numberButtons[i].onClick.AddListener(() => AddDigit(digit));
-        }
         enterButton.onClick.AddListener(CheckPin);
         clearButton.onClick.AddListener(ClearPin);
-        clearButton.onClick.AddListener(ReturnToWalletBridge);
+        RemoveCard.onClick.AddListener(ReturnToWalletBridge);
+        zero.onClick.AddListener(() => AddDigit("0"));
+        one.onClick.AddListener(() => AddDigit("1"));
+        two.onClick.AddListener(() => AddDigit("2"));
+        three.onClick.AddListener(() => AddDigit("3"));
+        four.onClick.AddListener(() => AddDigit("4"));
+        five.onClick.AddListener(() => AddDigit("5"));
+        six.onClick.AddListener(() => AddDigit("6"));
+        seven.onClick.AddListener(() => AddDigit("7"));
+        eight.onClick.AddListener(() => AddDigit("8"));
+        nine.onClick.AddListener(() => AddDigit("9"));
     }
+
     void ReturnToWalletBridge()
     {
-        cardHover.ReturnToWallet();
+        if (currentCard != null)
+        {
+            currentCard.ResetScanState();
+        }
     }
-    // Called by ScannableCard to prepare the pad for a new transaction
-    public void Initialize(ScannableCard card)
+
+    public void Initialize(ScannableCard card, POSTerminal terminal)
     {
         currentCard = card;
+        currentTerminal = terminal;
         ClearPin();
-    }
-    public void CancelTransaction()
-    {
-        currentCard.ResetScanState();
     }
 
     public void AddDigit(string digit)
@@ -60,25 +63,48 @@ public class PinPad : MonoBehaviour
 
     public void CheckPin()
     {
-        if (currentCard != null && currentPin == currentCard.pinCode)
+        // Compare against the PIN in TextUpdater.Instance
+        if (currentCard != null && currentPin == TextUpdater.Instance.pinCode)
         {
+            // The card handles the "complete" message and UI closing
             currentCard.CompleteTransaction();
         }
         else
         {
-            Debug.Log("Incorrect PIN...");
-            pinDisplayText.text = new string("Incorrect PIN...");
-            // add feedback here, like a red flash
-            ClearPin();
+            // Get text from TextUpdater
+            if (currentTerminal != null)
+            {
+                currentTerminal.DisplayMessage(TextUpdater.Instance.incorrectPin);
+            }
+            StartCoroutine(WaitThenClear());
+        }
+    }
+
+    IEnumerator WaitThenClear()
+    {
+        yield return new WaitForSeconds(1.5f);
+        ClearPin();
+        
+        // After clearing, reset the prompt
+        if(currentTerminal != null)
+        {
+            currentTerminal.DisplayMessage(TextUpdater.Instance.enterPin);
         }
     }
 
     private void UpdateDisplay()
     {
-        if (pinDisplayText != null)
+        if (currentTerminal != null)
         {
             // Display asterisks
-            pinDisplayText.text = new string('*', currentPin.Length);
+            if (currentPin.Length > 0)
+            {
+                currentTerminal.DisplayMessage(new string('*', currentPin.Length));
+            }
+            else //show the main prompt again
+            {
+                currentTerminal.DisplayMessage(TextUpdater.Instance.enterPin);
+            }
         }
     }
 }
