@@ -32,13 +32,11 @@ public class ScannableCard : MonoBehaviour
                     break;
 
                 case CardType.ID_Card:
-                    // CHANGE: Get text from TextUpdater
                     terminal.DisplayMessage(TextUpdater.Instance.idVerified);
-                    CompleteTransaction(false); // No beep/delay needed for simple verification
+                    CompleteTransaction(false);
                     break;
 
                 case CardType.Uno_Reverse:
-                    // CHANGE: Get text from TextUpdater
                     terminal.DisplayMessage(TextUpdater.Instance.unoReverseMessage);
                     CompleteTransaction(true);
                     break;
@@ -50,7 +48,6 @@ public class ScannableCard : MonoBehaviour
     {
         if (pinPadUI != null && terminal != null)
         {
-            // CHANGE: Get text from TextUpdater
             terminal.DisplayMessage(TextUpdater.Instance.enterPin);
             pinPadUI.SetActive(true);
             PinPad pad = pinPadUI.GetComponent<PinPad>();
@@ -64,13 +61,7 @@ public class ScannableCard : MonoBehaviour
     public void CompleteTransaction(bool playSoundAndDelay = true)
     {
         transactionComplete = true;
-
-        if (pinPadUI != null)
-        {
-            pinPadUI.SetActive(false);
-        }
-
-        // CHANGE: Get text from TextUpdater
+        pinPadUI.SetActive(false);
         terminal.DisplayMessage(TextUpdater.Instance.transactionCompleteMessage);
 
         if (playSoundAndDelay)
@@ -88,7 +79,7 @@ public class ScannableCard : MonoBehaviour
         {
             pinPadUI.SetActive(false);
         }
-        // CHANGE: Reset terminal text when card is removed prematurely
+        // Reset terminal text when card is removed prematurely
         if(terminal != null)
         {
             terminal.DisplayMessage(TextUpdater.Instance.insertCard);
