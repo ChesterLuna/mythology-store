@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dbad4e1896946a14aa7c047fa524cec0
+guid: 392f645e7680ff04e9a83018dedb2ccb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8655357124416642862
-    second: Win_minigame_letters_0
+      213: -2539636034655086764
+    second: minigame_frame_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Win_minigame_letters_0
+      name: minigame_frame_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 400
-        height: 200
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2d0effaad8ef1e780800000000000000
-      internalID: -8655357124416642862
+      spriteID: 4571a976b7661ccd0800000000000000
+      internalID: -2539636034655086764
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Win_minigame_letters_0: -8655357124416642862
+      minigame_frame_0: -2539636034655086764
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
