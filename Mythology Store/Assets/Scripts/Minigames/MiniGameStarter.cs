@@ -10,6 +10,9 @@ public class MiniGameStarter : MonoBehaviour
 
     [SerializeField] public string miniGameName;
 
+    [SerializeField] AudioClip startingSound;
+    [SerializeField] GameObject clipPlayer;
+
     void Start()
     {
         if (hasStartingDialogue)
@@ -23,6 +26,11 @@ public class MiniGameStarter : MonoBehaviour
         if (hasStartingDialogue && npcConversation != null)
         {
             ConversationManager.Instance.StartConversation(npcConversation);
+            if (startingSound != null && clipPlayer != null)
+            {
+                Instantiate(clipPlayer).GetComponent<AudioSource>().PlayOneShot(startingSound);
+
+            }
             GameManager.Instance.DisableList();
             ConversationManager.OnConversationEnded += SpawnMiniGame;
         }
