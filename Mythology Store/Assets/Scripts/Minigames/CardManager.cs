@@ -19,6 +19,9 @@ public class CardManager : Minigame
 
     List<CardObject> cardObjects = new List<CardObject>();
 
+    [SerializeField] private List<Sprite> customBacks = new List<Sprite>();
+    private int customBacksID = 0;
+
     new void Start()
     {
         base.Start();
@@ -26,7 +29,13 @@ public class CardManager : Minigame
         List<CardInfo> shuffledCardInfo = ShuffleList<CardInfo>(spawnableCards);
         cardsToSpawn = shuffledCardInfo.GetRange(0, pairsToWin).ToArray<CardInfo>();
 
-        matchedPairs = 0;
+        if (customBacks != null && customBacks.Count > 0)
+        {
+            customBacks = ShuffleList<Sprite>(customBacks);
+        }
+
+
+            matchedPairs = 0;
         SpawnCards(pairsToWin * 2);
         ShuffleCards(cardObjects);
     }
@@ -37,6 +46,14 @@ public class CardManager : Minigame
         {
             CardObject cardO = Instantiate(cardGameObject, cardsParent).GetComponent<CardObject>();
             cardO.cardManager = this;
+
+            if (customBacks != null && customBacks.Count > 0)
+            {
+                cardO.backSprite = customBacks[customBacksID];
+                cardO.backImage.sprite = customBacks[customBacksID];
+                customBacksID++;
+            }
+
             cardObjects.Add(cardO);
         }
     }
