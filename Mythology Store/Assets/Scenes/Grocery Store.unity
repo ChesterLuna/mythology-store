@@ -239,6 +239,10 @@ PrefabInstance:
       propertyPath: listObject
       value: 
       objectReference: {fileID: 1271775326}
+    - target: {fileID: 2679407690171483849, guid: f2975fe983f83f141acb93a45e82e004, type: 3}
+      propertyPath: difficultyLevel
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2883922492125593393, guid: f2975fe983f83f141acb93a45e82e004, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.6120932

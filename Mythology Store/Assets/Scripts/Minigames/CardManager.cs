@@ -1,27 +1,43 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CardManager : Minigame
 {
     [SerializeField] int matchedPairs = 0;
+    [SerializeField] int pairsToWin = 3;
     [SerializeField] CardObject firstChoice = null;
     [SerializeField] CardObject secondChoice = null;
 
     [SerializeField] GameObject cardGameObject;
 
-    [SerializeField] CardInfo[] cardsToSpawn;
+    [SerializeField] List<CardInfo> spawnableCards;
+    private CardInfo[] cardsToSpawn;
     [SerializeField] Transform cardsParent;
 
     List<CardObject> cardObjects = new List<CardObject>();
 
+    [SerializeField] private List<Sprite> customBacks = new List<Sprite>();
+    private int customBacksID = 0;
+
     new void Start()
     {
         base.Start();
-        matchedPairs = 0;
-        SpawnCards(cardsToSpawn.Length * 2);
-        ShuffleCards(cardObjects);
 
+        List<CardInfo> shuffledCardInfo = ShuffleList<CardInfo>(spawnableCards);
+        cardsToSpawn = shuffledCardInfo.GetRange(0, pairsToWin).ToArray<CardInfo>();
+
+        if (customBacks != null && customBacks.Count > 0)
+        {
+            customBacks = ShuffleList<Sprite>(customBacks);
+        }
+
+
+            matchedPairs = 0;
+        SpawnCards(pairsToWin * 2);
+        ShuffleCards(cardObjects);
     }
 
     void SpawnCards(int length)
@@ -30,6 +46,14 @@ public class CardManager : Minigame
         {
             CardObject cardO = Instantiate(cardGameObject, cardsParent).GetComponent<CardObject>();
             cardO.cardManager = this;
+
+            if (customBacks != null && customBacks.Count > 0)
+            {
+                cardO.backSprite = customBacks[customBacksID];
+                cardO.backImage.sprite = customBacks[customBacksID];
+                customBacksID++;
+            }
+
             cardObjects.Add(cardO);
         }
     }
@@ -61,14 +85,15 @@ public class CardManager : Minigame
         else if (secondChoice == null)
         {
             secondChoice = card;
-            CheckMatching(firstChoice, secondChoice);
+            StartCoroutine(CheckMatching(firstChoice, secondChoice));
             firstChoice = null;
             secondChoice = null;
         }
     }
 
-    void CheckMatching(CardObject a, CardObject b)
+    IEnumerator CheckMatching(CardObject a, CardObject b)
     {
+        yield return new WaitForSeconds(0.4f);
         if (a.cardInfo.cardName == b.cardInfo.cardName)
         {
             matchedPairs++;
@@ -97,7 +122,7 @@ public class CardManager : Minigame
 
     protected override bool HasWon()
     {
-        return cardsToSpawn.Length <= matchedPairs;
+        return pairsToWin <= matchedPairs;
     }
 
 }

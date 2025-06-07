@@ -11,7 +11,7 @@ public abstract class Minigame : MonoBehaviour
     [SerializeField] protected GameObject clipPlayer;
     [SerializeField] protected GameObject winScreen;
     [SerializeField] protected bool hasEndingDialogue = true;
-    private NPCConversation endingDialogue;
+    private NPCConversation[] endingDialogues;
 
     [SerializeField] public string miniGameName;
 
@@ -23,7 +23,7 @@ public abstract class Minigame : MonoBehaviour
 
         if (hasEndingDialogue)
         {
-            endingDialogue = GetComponentInChildren<NPCConversation>();
+            endingDialogues = GetComponentsInChildren<NPCConversation>();
         }
     }
 
@@ -54,9 +54,12 @@ public abstract class Minigame : MonoBehaviour
         GameManager.Instance.FinishedMiniGame(miniGameName);
         GameManager.Instance.miniGameInProgress = false;
 
-        if (hasEndingDialogue && endingDialogue != null)
+        if (hasEndingDialogue && endingDialogues != null)
         {
-            ConversationManager.Instance.StartConversation(endingDialogue);
+            int chosenID = Random.Range(0, endingDialogues.Length);
+            NPCConversation chosenConversation = endingDialogues[chosenID];
+            ConversationManager.Instance.StartConversation(chosenConversation);
+
             GameManager.Instance.DisableList();
         }
         else
