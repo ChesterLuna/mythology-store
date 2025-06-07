@@ -357,6 +357,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7556853535044539606, guid: 0778dec7a1c775c41b6c60441832f525, type: 3}
+      propertyPath: m_PixelsPerUnitMultiplier
+      value: 4.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8891503322521447318, guid: 0778dec7a1c775c41b6c60441832f525, type: 3}
       propertyPath: m_SizeDelta.x
       value: 250
