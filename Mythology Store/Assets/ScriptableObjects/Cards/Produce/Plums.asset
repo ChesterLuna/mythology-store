@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Plums
   m_EditorClassIdentifier: 
   cardName: Plums
-  cardSprite: {fileID: 21300000, guid: 33cc7a7e760eac545b63b0807f94172d, type: 3}
-  defaultSprite: {fileID: 21300000, guid: 5218a9fa0d15fec42a46ddad665f8c25, type: 3}
+  frontSprite: {fileID: 21300000, guid: 914e33df48c46ed4faa864ee726b7b26, type: 3}
+  backSprite: {fileID: 21300000, guid: 5218a9fa0d15fec42a46ddad665f8c25, type: 3}
   transparentSprite: {fileID: 21300000, guid: 70e433de46068504fa56fcf7f49b32b1, type: 3}
+  frontPaperSprite: {fileID: 21300000, guid: 967abd625bba59949acb4265fc54ba9d, type: 3}

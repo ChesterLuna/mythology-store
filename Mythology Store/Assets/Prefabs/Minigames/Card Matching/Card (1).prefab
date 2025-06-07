@@ -53,6 +53,8 @@ MonoBehaviour:
   cardInfo: {fileID: 0}
   cardMatched: 0
   cardManager: {fileID: 0}
+  objectImage: {fileID: 6324803285513590970}
+  backImage: {fileID: 1763732209839762528}
 --- !u!1 &5044104069358209954
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,8 +90,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -15.0000305, y: 16.000025}
+  m_SizeDelta: {x: 197.5355, y: 197.5355}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &272287121285246896
 CanvasRenderer:
@@ -220,8 +222,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -15, y: 16}
+  m_SizeDelta: {x: 197.5355, y: 197.5355}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8302908979915516700
 CanvasRenderer:

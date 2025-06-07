@@ -5,6 +5,7 @@ using UnityEngine;
 public class CardManager : Minigame
 {
     [SerializeField] int matchedPairs = 0;
+    [SerializeField] int pairsToWin = 3;
     [SerializeField] CardObject firstChoice = null;
     [SerializeField] CardObject secondChoice = null;
 
@@ -19,7 +20,7 @@ public class CardManager : Minigame
     {
         base.Start();
         matchedPairs = 0;
-        SpawnCards(cardsToSpawn.Length * 2);
+        SpawnCards(pairsToWin * 2);
         ShuffleCards(cardObjects);
 
     }
@@ -98,7 +99,7 @@ public class CardManager : Minigame
 
     protected override bool HasWon()
     {
-        return cardsToSpawn.Length <= matchedPairs;
+        return pairsToWin <= matchedPairs;
     }
 
 }
