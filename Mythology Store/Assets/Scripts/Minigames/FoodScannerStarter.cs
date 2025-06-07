@@ -4,11 +4,13 @@ using UnityEngine;
 public class FoodScannerStarter : Minigame
 {
     private FoodScannerManager foodManager;
+    [SerializeField] public CardScannerManager paymentMinigame;
 
     new void Start()
     {
         base.Start();
         foodManager = FindFirstObjectByType<FoodScannerManager>();
+        paymentMinigame = FindFirstObjectByType<CardScannerManager>();
         // Spawn items
         foodManager.SpawnFood(GameManager.Instance.foodToScan);
 
@@ -32,5 +34,7 @@ public class FoodScannerStarter : Minigame
             Destroy(item.gameObject);
         }
         foodManager.cmCamera.Priority = -1;
+
+        paymentMinigame.DelayStart();
     }
 }

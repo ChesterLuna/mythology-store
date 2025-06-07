@@ -83,6 +83,7 @@ public class GameManager : MonoBehaviour
 
     public void FinishedMiniGame(string miniGameName)
     {
+        if (!currentTasksDict.ContainsKey(miniGameName)) return;
         TextMeshProUGUI taskDone = currentTasksDict[miniGameName].GetComponent<TextMeshProUGUI>();
         taskDone.text = "<s>" + taskDone.text + "</s>";
         finishedTasks.Add(miniGameName);

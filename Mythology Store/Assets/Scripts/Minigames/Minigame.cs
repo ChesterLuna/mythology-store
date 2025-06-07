@@ -55,7 +55,7 @@ public abstract class Minigame : MonoBehaviour
         GameManager.Instance.FinishedMiniGame(miniGameName);
         GameManager.Instance.miniGameInProgress = false;
 
-        if (productsToGet != null)
+        if (productsToGet != null && productsToGet.Length > 0)
         {
             int chosenID = Random.Range(0, productsToGet.Length);
             GameManager.Instance.foodToScan.Add(productsToGet[chosenID]);

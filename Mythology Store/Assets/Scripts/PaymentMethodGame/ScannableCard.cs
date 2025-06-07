@@ -28,7 +28,10 @@ public class ScannableCard : MonoBehaviour
             switch (type)
             {
                 case CardType.PIN_Credit:
-                    InitiatePinEntry();
+                    terminal.DisplayMessage(TextUpdater.Instance.transactionCompleteMessage);
+                    CompleteTransaction(true);
+                    transform.parent.parent.GetComponent<CardScannerManager>().hasScanned = true;
+
                     break;
 
                 case CardType.ID_Card:
@@ -62,8 +65,6 @@ public class ScannableCard : MonoBehaviour
     {
         transactionComplete = true;
         pinPadUI.SetActive(false);
-        terminal.DisplayMessage(TextUpdater.Instance.transactionCompleteMessage);
-
         if (playSoundAndDelay)
         {
             terminal.PlayBeep();

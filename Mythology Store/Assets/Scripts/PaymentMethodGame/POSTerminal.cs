@@ -39,6 +39,7 @@ public class POSTerminal : MonoBehaviour
 
     public void DisplayMessage(string message)
     {
+        Debug.Log("I am printing "+ message);
         if (terminalDisplayText != null)
         {
             terminalDisplayText.text = message;
