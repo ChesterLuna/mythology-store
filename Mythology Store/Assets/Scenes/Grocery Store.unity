@@ -1972,7 +1972,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550350706}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: ae00b19e18432174eb22c8f51996ed52, type: 2}
   m_audioClip: {fileID: 8300000, guid: c69d70d0d1bcd0c4bbf6226b9d431bc7, type: 3}
@@ -3878,7 +3878,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1089351521}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: ae00b19e18432174eb22c8f51996ed52, type: 2}
   m_audioClip: {fileID: 8300000, guid: c69d70d0d1bcd0c4bbf6226b9d431bc7, type: 3}
@@ -5340,6 +5340,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1271775326}
     - target: {fileID: 2679407690171483849, guid: f2975fe983f83f141acb93a45e82e004, type: 3}
+      propertyPath: mainGameSound
+      value: 
+      objectReference: {fileID: 8300000, guid: c69d70d0d1bcd0c4bbf6226b9d431bc7, type: 3}
+    - target: {fileID: 2679407690171483849, guid: f2975fe983f83f141acb93a45e82e004, type: 3}
+      propertyPath: miniGameSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 79171286955eebf4ebae8318cdc38ace, type: 3}
+    - target: {fileID: 2679407690171483849, guid: f2975fe983f83f141acb93a45e82e004, type: 3}
       propertyPath: difficultyLevel
       value: 3
       objectReference: {fileID: 0}
@@ -6377,6 +6385,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9166600661191671812, guid: 69569983e5fdd804985adaab99d07053, type: 3}
     - target: {fileID: 1516429882195125549, guid: 9a334829fde723248a82e85dd4611b2f, type: 3}
+      propertyPath: miniGameMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 79171286955eebf4ebae8318cdc38ace, type: 3}
+    - target: {fileID: 1516429882195125549, guid: 9a334829fde723248a82e85dd4611b2f, type: 3}
       propertyPath: startingSound
       value: 
       objectReference: {fileID: 8300000, guid: d91d308488fa90d4c952d330c827193d, type: 3}
@@ -6440,6 +6452,10 @@ PrefabInstance:
       propertyPath: clipPlayer
       value: 
       objectReference: {fileID: 9166600661191671812, guid: 69569983e5fdd804985adaab99d07053, type: 3}
+    - target: {fileID: 3354836978291593771, guid: 9a334829fde723248a82e85dd4611b2f, type: 3}
+      propertyPath: miniGameMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 79171286955eebf4ebae8318cdc38ace, type: 3}
     - target: {fileID: 3354836978291593771, guid: 9a334829fde723248a82e85dd4611b2f, type: 3}
       propertyPath: startingSound
       value: 
@@ -6569,6 +6585,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9166600661191671812, guid: 69569983e5fdd804985adaab99d07053, type: 3}
     - target: {fileID: 8394022902653292343, guid: 9a334829fde723248a82e85dd4611b2f, type: 3}
+      propertyPath: miniGameMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 79171286955eebf4ebae8318cdc38ace, type: 3}
+    - target: {fileID: 8394022902653292343, guid: 9a334829fde723248a82e85dd4611b2f, type: 3}
       propertyPath: startingSound
       value: 
       objectReference: {fileID: 8300000, guid: efb816adc86c35844b78b1f4f88b5f04, type: 3}
@@ -6576,6 +6596,10 @@ PrefabInstance:
       propertyPath: clipPlayer
       value: 
       objectReference: {fileID: 9166600661191671812, guid: 69569983e5fdd804985adaab99d07053, type: 3}
+    - target: {fileID: 8491877526969001022, guid: 9a334829fde723248a82e85dd4611b2f, type: 3}
+      propertyPath: miniGameMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 79171286955eebf4ebae8318cdc38ace, type: 3}
     - target: {fileID: 8760902729389135961, guid: 9a334829fde723248a82e85dd4611b2f, type: 3}
       propertyPath: m_Color.a
       value: 0.09411765
@@ -6644,6 +6668,10 @@ PrefabInstance:
       propertyPath: clipPlayer
       value: 
       objectReference: {fileID: 9166600661191671812, guid: 69569983e5fdd804985adaab99d07053, type: 3}
+    - target: {fileID: 9214813556238139906, guid: 9a334829fde723248a82e85dd4611b2f, type: 3}
+      propertyPath: miniGameMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 79171286955eebf4ebae8318cdc38ace, type: 3}
     - target: {fileID: 9214813556238139906, guid: 9a334829fde723248a82e85dd4611b2f, type: 3}
       propertyPath: startingSound
       value: 

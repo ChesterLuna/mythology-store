@@ -25,6 +25,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private List<GameObject> objectsToEnableAfterList = new List<GameObject>();
 
+    [SerializeField] AudioClip miniGameSound;
+    [SerializeField] AudioClip mainGameSound;
+
     private void Awake()
     {
         // Make a singleton
@@ -100,5 +103,17 @@ public class GameManager : MonoBehaviour
     internal void TimeFinished()
     {
         Debug.Log("Game is done");
+    }
+
+    internal void SwitchMusicToMain()
+    {
+        GetComponent<AudioSource>().clip = mainGameSound;
+        GetComponent<AudioSource>().Play();
+    }
+
+    internal void SwitchMusicToMini()
+    {
+        GetComponent<AudioSource>().clip = miniGameSound;
+        GetComponent<AudioSource>().Play();
     }
 }

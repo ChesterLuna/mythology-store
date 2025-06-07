@@ -49,6 +49,7 @@ public class MiniGameStarter : MonoBehaviour
             return;
         }
 
+        GameManager.Instance.SwitchMusicToMini();
 
         Transform mainCanvas = GameObject.Find("Main Canvas").transform;
         GameObject _miniGameInstance = Instantiate(miniGame, mainCanvas);

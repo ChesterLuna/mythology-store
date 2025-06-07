@@ -74,6 +74,10 @@ public abstract class Minigame : MonoBehaviour
             GameManager.Instance.AllowPlayerMovement(true);
         }
 
+        AudioSource[] audioSources = GameManager.Instance.GetComponents<AudioSource>();
+
+        GameManager.Instance.SwitchMusicToMain();
+
         BeforeDestroying();
 
         Destroy(this.gameObject);
