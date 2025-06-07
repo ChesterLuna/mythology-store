@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CardManager : Minigame
@@ -11,7 +13,8 @@ public class CardManager : Minigame
 
     [SerializeField] GameObject cardGameObject;
 
-    [SerializeField] CardInfo[] cardsToSpawn;
+    [SerializeField] List<CardInfo> spawnableCards;
+    private CardInfo[] cardsToSpawn;
     [SerializeField] Transform cardsParent;
 
     List<CardObject> cardObjects = new List<CardObject>();
@@ -19,10 +22,13 @@ public class CardManager : Minigame
     new void Start()
     {
         base.Start();
+
+        List<CardInfo> shuffledCardInfo = ShuffleList<CardInfo>(spawnableCards);
+        cardsToSpawn = shuffledCardInfo.GetRange(0, pairsToWin).ToArray<CardInfo>();
+
         matchedPairs = 0;
         SpawnCards(pairsToWin * 2);
         ShuffleCards(cardObjects);
-
     }
 
     void SpawnCards(int length)

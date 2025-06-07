@@ -271,7 +271,7 @@ MonoBehaviour:
   firstChoice: {fileID: 0}
   secondChoice: {fileID: 0}
   cardGameObject: {fileID: 3785613444739370697, guid: 67c4e6ad1988e8845a71d027f7fb0e62, type: 3}
-  cardsToSpawn:
+  spawnableCards:
   - {fileID: 11400000, guid: cb91d0f1960e51e4ab6d5eb966df5c89, type: 2}
   - {fileID: 11400000, guid: d886467c8bab21945be15893d01b48f9, type: 2}
   - {fileID: 11400000, guid: bcb3571f60a9b3444aa476edf9bc5686, type: 2}
