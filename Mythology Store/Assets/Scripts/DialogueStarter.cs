@@ -3,16 +3,18 @@ using DialogueEditor;
 
 public class DialogueStarter : MonoBehaviour
 {
-    private NPCConversation npcConversation;
+    private NPCConversation[] npcConversations;
 
     void Start()
     {
-        npcConversation = GetComponentInChildren<NPCConversation>();
+        npcConversations = GetComponentsInChildren<NPCConversation>();
     }
 
     public void StartDialogue()
     {
-        ConversationManager.Instance.StartConversation(npcConversation);
+        int chosenID = Random.Range(0, npcConversations.Length);
+        NPCConversation chosenConversation = npcConversations[chosenID];
+        ConversationManager.Instance.StartConversation(chosenConversation);
         GameManager.Instance.DisableList();
     }
 
