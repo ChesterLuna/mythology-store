@@ -1,5 +1,5 @@
 using UnityEngine;
-using TMPro; // Add this to display messages
+using TMPro;
 
 public class POSTerminal : MonoBehaviour
 {
