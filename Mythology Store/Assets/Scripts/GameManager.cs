@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
 
     public List<GameObject> foodToScan = new List<GameObject>();
 
+    [SerializeField] private List<GameObject> objectsToEnableAfterList = new List<GameObject>();
+
     private void Awake()
     {
         // Make a singleton
@@ -87,7 +89,10 @@ public class GameManager : MonoBehaviour
 
         if (finishedTasks.Count >= difficultyLevel)
         {
-            Debug.Log("All tasks done");
+            foreach (GameObject item in objectsToEnableAfterList)
+            {
+                item.SetActive(true);
+            }
         }
     }
 
