@@ -6262,6 +6262,10 @@ PrefabInstance:
       propertyPath: m_text
       value: to-do
       objectReference: {fileID: 0}
+    - target: {fileID: 7616413716921716593, guid: 83438f18c8ccfe44889792fe9e215c4e, type: 3}
+      propertyPath: ScrollSpeed
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 8769245424518081741, guid: 83438f18c8ccfe44889792fe9e215c4e, type: 3}
       propertyPath: m_Name
       value: Main Canvas
