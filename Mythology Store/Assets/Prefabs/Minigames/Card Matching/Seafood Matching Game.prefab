@@ -280,12 +280,12 @@ MonoBehaviour:
   secondChoice: {fileID: 0}
   cardGameObject: {fileID: 3785613444739370697, guid: 67c4e6ad1988e8845a71d027f7fb0e62, type: 3}
   spawnableCards:
-  - {fileID: 11400000, guid: cb91d0f1960e51e4ab6d5eb966df5c89, type: 2}
-  - {fileID: 11400000, guid: d886467c8bab21945be15893d01b48f9, type: 2}
-  - {fileID: 11400000, guid: bcb3571f60a9b3444aa476edf9bc5686, type: 2}
-  - {fileID: 11400000, guid: f7c06512afd52f24e8885002fb1f26ee, type: 2}
-  - {fileID: 11400000, guid: ffb10d4f01c1e1d4f8419aeef3d20ba9, type: 2}
-  - {fileID: 11400000, guid: 252e12ee076db404db76d1b7087ee941, type: 2}
+  - {fileID: 11400000, guid: 692ceab210e2bf84f9bfe3af3c1e3140, type: 2}
+  - {fileID: 11400000, guid: a0908959f178d804086569353a708e9a, type: 2}
+  - {fileID: 11400000, guid: 59326dabd7e203f428abf21ae6e84a6a, type: 2}
+  - {fileID: 11400000, guid: 9188549d6d6fe6c4fad7e15735f3456c, type: 2}
+  - {fileID: 11400000, guid: d9c8696c87131f846b5f25ef7ea8d176, type: 2}
+  - {fileID: 11400000, guid: 8d93e2645d02ab44ab0aac5c789b12aa, type: 2}
   cardsParent: {fileID: 7333076485475372494}
   customBacks:
   - {fileID: 21300000, guid: a8818a2d1ff970e4a90bd483fa7a93b7, type: 3}
