@@ -646,6 +646,7 @@ namespace DialogueEditor
         {
             DialoguePanel.gameObject.SetActive(false);
             OptionsPanel.gameObject.SetActive(false);
+            NpcIcon.color = new Color(NpcIcon.color[0], NpcIcon.color[1], NpcIcon.color[2], 0);
             SetState(eState.Off);
 #if UNITY_EDITOR
             // Debug.Log("[ConversationManager]: Conversation UI off.");
