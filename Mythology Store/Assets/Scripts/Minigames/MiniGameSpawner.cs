@@ -6,10 +6,10 @@ using UnityEngine;
 public class MiniGameSpawner : MonoBehaviour
 {
     private MiniGameContainer[] miniGameContainers;
-    private NPCContainer[] NPCContainers;
+    // private NPCContainer[] NPCContainers;
     private Dictionary<string, MiniGameContainer> miniGamesDict;
     private int difficultyLevel = 2;
-    [SerializeField] private int NPCExtras = 2;
+    // [SerializeField] private int NPCExtras = 2;
 
     [Header("List")]
     [SerializeField] private Transform listTransform;
@@ -21,34 +21,34 @@ public class MiniGameSpawner : MonoBehaviour
     {
         miniGamesDict = new Dictionary<string, MiniGameContainer>();
         miniGameContainers = GetComponentsInChildren<MiniGameContainer>();
-        NPCContainers = GetComponentsInChildren<NPCContainer>();
+        // NPCContainers = GetComponentsInChildren<NPCContainer>();
 
         difficultyLevel = GameManager.Instance.difficultyLevel;
 
         foreach (MiniGameContainer container in miniGameContainers)
         {
             miniGamesDict.Add(container.miniGameName, container);
-            container.gameObject.SetActive(false);
+            // container.gameObject.SetActive(false);
         }
 
         SpawnRandomTasks(difficultyLevel);
 
         SpawnEmptyTasks();
 
-        SpawnNPCs(NPCExtras);
+        // SpawnNPCs(NPCExtras);
 
     }
 
-    private void SpawnNPCs(int amount)
-    {
-        List<int> ids = Enumerable.Range(0, NPCContainers.Length).ToList<int>();
-        Debug.Log(ids);
-        List<int> NPCsToSpawn = ShuffleList(ids);
-        for (int i = 0; i < amount; i++)
-        {
-            NPCContainers[NPCsToSpawn[i]].gameObject.SetActive(true);
-        }
-    }
+    // private void SpawnNPCs(int amount)
+    // {
+    //     List<int> ids = Enumerable.Range(0, NPCContainers.Length).ToList<int>();
+    //     Debug.Log(ids);
+    //     List<int> NPCsToSpawn = ShuffleList(ids);
+    //     for (int i = 0; i < amount; i++)
+    //     {
+    //         NPCContainers[NPCsToSpawn[i]].gameObject.SetActive(true);
+    //     }
+    // }
 
     private void SpawnRandomTasks(int amount)
     {
@@ -80,7 +80,7 @@ public class MiniGameSpawner : MonoBehaviour
         if (taskName != "")
         {
             GameManager.Instance.currentTasksDict.Add(taskName, task);
-            miniGamesDict[taskName].gameObject.SetActive(true);
+            miniGamesDict[taskName].SetMiniGameActive();
         }
         else
         {
