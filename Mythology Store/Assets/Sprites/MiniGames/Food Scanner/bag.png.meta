@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7c465b1dc5f40f940bf71ef7692ac093
+guid: 74d405ae0a5e7e8468d9f1e07c49f8f8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1540667657199751079
-    second: ToDoListBackground_0
+      213: 8766740682603709380
+    second: bag_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -48,10 +48,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 33
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,49 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ToDoListBackground_0
+      name: bag_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1046
-        height: 1280
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 207, y: 0, z: 0, w: 0}
-      customData: 
-      outline:
-      - - {x: 50, y: 50}
-        - {x: -50, y: 50}
-        - {x: -50, y: -50}
-        - {x: 50, y: -50}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97f1a4377006c3f429f834e730a1971c
-      internalID: 609538187
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ToDoListBackground_1
-      rect:
-        serializedVersion: 2
-        x: 258
-        y: 900
-        width: 15
-        height: 62
+        width: 451
+        height: 433
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bb2b2da8edf1d90488f2b9b8c64a8476
-      internalID: 1729508237
+      spriteID: 4c34f80e338b9a970800000000000000
+      internalID: 8766740682603709380
       vertices: []
       indices: 
       edges: []
@@ -164,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d19f925455ee48346bd6c93712096666
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -173,9 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      ToDoListBackground_0: 609538187
-      ToDoListBackground_1: 1729508237
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
