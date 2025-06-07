@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using PrimeTween;
 
 public class CardObject : MonoBehaviour
 {
@@ -16,12 +17,14 @@ public class CardObject : MonoBehaviour
 
     public void Show()
     {
-        image.sprite = cardInfo.cardSprite;
+        Tween.Rotation(GetComponent<RectTransform>(), new Vector3(0f, 180f, 0f), 0.2f);
+        Tween.Delay(0.1f, () => image.sprite = cardInfo.cardSprite);
     }
 
     public void Hide()
     {
-        image.sprite = cardInfo.defaultSprite;
+        Tween.Rotation(GetComponent<RectTransform>(), new Vector3(0f, 0f, 0f), 0.1f);
+        Tween.Delay(0.05f, () => image.sprite = cardInfo.defaultSprite);
     }
 
     public void SetSelected()

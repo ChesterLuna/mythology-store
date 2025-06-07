@@ -188,6 +188,8 @@ MonoBehaviour:
   winSound: {fileID: 8300000, guid: 0afa4ae0274569046924b65e4d316187, type: 3}
   clipPlayer: {fileID: 9166600661191671812, guid: 69569983e5fdd804985adaab99d07053, type: 3}
   winScreen: {fileID: 2916801003325574382, guid: 61da8e4ceb534ac4eb257eeb6fa62e16, type: 3}
+  hasEndingDialogue: 1
+  miniGameName: 
   matchedPairs: 0
   firstChoice: {fileID: 0}
   secondChoice: {fileID: 0}
