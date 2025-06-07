@@ -67,6 +67,13 @@ public abstract class Minigame : MonoBehaviour
             GameManager.Instance.AllowPlayerMovement(true);
         }
 
+        BeforeDestroying();
+
         Destroy(this.gameObject);
+    }
+
+    protected virtual void BeforeDestroying()
+    {
+
     }
 }

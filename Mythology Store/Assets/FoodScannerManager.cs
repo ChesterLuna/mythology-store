@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class FoodScannerManager : MonoBehaviour
@@ -8,6 +9,7 @@ public class FoodScannerManager : MonoBehaviour
     [SerializeField] private float spawnArea = 5f;
 
     [SerializeField] private Transform foodParent;
+    [SerializeField] public CinemachineCamera cmCamera;
 
 
     public void SpawnFood(List<GameObject> items)
@@ -24,15 +26,4 @@ public class FoodScannerManager : MonoBehaviour
 
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
