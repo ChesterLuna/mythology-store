@@ -10,10 +10,18 @@ public class PlayerMover : MonoBehaviour
     Vector2 movement = Vector2.zero;
     private bool allowMovement = true;
 
+    public AudioSource walkAudioSource;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         movement = Vector2.zero;
+
+        if(walkAudioSource == null)
+        {
+            walkAudioSource = GetComponent<AudioSource>();
+        }
+
     }
 
     void FixedUpdate()
@@ -21,6 +29,8 @@ public class PlayerMover : MonoBehaviour
         rb.linearVelocity = movement * speed * Time.fixedDeltaTime;
         // rb.AddForce(movement * speed);
         // print(movement * speed);
+
+        HandleWalkingAudio();
     }
 
 
@@ -46,5 +56,29 @@ public class PlayerMover : MonoBehaviour
         allowMovement = false;
         rb.linearVelocity = Vector2.zero;
         movement = Vector2.zero;
+
+        if (walkAudioSource.isPlaying)
+        {
+            walkAudioSource.Stop();
+        }
+    }
+
+    private void HandleWalkingAudio()
+    {
+        // Only play walking sound when player is moving
+        if (movement.magnitude > 0.1f)
+        {
+            if (!walkAudioSource.isPlaying)
+            {
+                walkAudioSource.Play();
+            }
+        }
+        else
+        {
+            if (walkAudioSource.isPlaying)
+            {
+                walkAudioSource.Stop();
+            }
+        }
     }
 }
