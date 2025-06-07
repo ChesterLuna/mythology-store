@@ -285,6 +285,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 524de002ac89df34bb4e1cf4b6f21563, type: 2}
   cardsParent: {fileID: 7333076485475372494}
   customBacks: []
+  flipSound: {fileID: 8300000, guid: 8cd7d3f76a666ae4e87d1f2176e56f60, type: 3}
+  wrongSound: {fileID: 8300000, guid: d770fde4fefea4f4291ca8d124f1cf41, type: 3}
+  correctSound: {fileID: 8300000, guid: 40552fa4838b80d479793844e2e5232e, type: 3}
 --- !u!1001 &3561156165183776931
 PrefabInstance:
   m_ObjectHideFlags: 0

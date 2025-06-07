@@ -301,6 +301,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6ebdb0ae89bc55e44bcd052d46f8d0ba, type: 3}
   - {fileID: 21300000, guid: faff7a986c1abce45a3e3746e2b0c988, type: 3}
   - {fileID: 21300000, guid: e6994147a26931047946ee5a258fe99c, type: 3}
+  flipSound: {fileID: 8300000, guid: 8cd7d3f76a666ae4e87d1f2176e56f60, type: 3}
+  wrongSound: {fileID: 8300000, guid: d770fde4fefea4f4291ca8d124f1cf41, type: 3}
+  correctSound: {fileID: 8300000, guid: 40552fa4838b80d479793844e2e5232e, type: 3}
 --- !u!1001 &1675946015898883057
 PrefabInstance:
   m_ObjectHideFlags: 0

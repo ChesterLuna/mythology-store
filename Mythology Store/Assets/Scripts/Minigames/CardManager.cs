@@ -20,6 +20,12 @@ public class CardManager : Minigame
     List<CardObject> cardObjects = new List<CardObject>();
 
     [SerializeField] private List<Sprite> customBacks = new List<Sprite>();
+
+    [SerializeField] AudioClip flipSound;
+    [SerializeField] AudioClip wrongSound;
+    [SerializeField] AudioClip correctSound;
+
+
     private int customBacksID = 0;
 
     new void Start()
@@ -78,6 +84,7 @@ public class CardManager : Minigame
 
     public void SetSelected(CardObject card)
     {
+        Instantiate(clipPlayer).GetComponent<AudioSource>().PlayOneShot(flipSound);
         if (firstChoice == null)
         {
             firstChoice = card;
@@ -98,9 +105,11 @@ public class CardManager : Minigame
         {
             matchedPairs++;
             a.SetMatched(true);
+            Instantiate(clipPlayer).GetComponent<AudioSource>().PlayOneShot(correctSound);
         }
         else
         {
+            Instantiate(clipPlayer).GetComponent<AudioSource>().PlayOneShot(wrongSound);
             a.Hide();
             b.Hide();
         }
