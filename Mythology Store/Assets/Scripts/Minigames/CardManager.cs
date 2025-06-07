@@ -61,14 +61,15 @@ public class CardManager : Minigame
         else if (secondChoice == null)
         {
             secondChoice = card;
-            CheckMatching(firstChoice, secondChoice);
+            StartCoroutine(CheckMatching(firstChoice, secondChoice));
             firstChoice = null;
             secondChoice = null;
         }
     }
 
-    void CheckMatching(CardObject a, CardObject b)
+    IEnumerator CheckMatching(CardObject a, CardObject b)
     {
+        yield return new WaitForSeconds(0.4f);
         if (a.cardInfo.cardName == b.cardInfo.cardName)
         {
             matchedPairs++;
