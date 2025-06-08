@@ -18,9 +18,15 @@ public class FoodScannerManager : MonoBehaviour
         {
             float x = Random.Range(-spawnArea, spawnArea);
             float y = Random.Range(-spawnArea, spawnArea);
-            Vector2 randomVector = new Vector2(x, y);
-            Vector2 spawnPoint = (Vector2)spawner.position + randomVector;
-            Instantiate(item, spawnPoint, Quaternion.identity, foodParent);
+
+
+            float rotation = Random.Range(0, 360);
+
+            Quaternion therotation = new Quaternion(Quaternion.identity.x, Quaternion.identity.y, rotation, Quaternion.identity.w);
+
+            Vector3 randomVector = new Vector3(x, y, -2);
+            Vector2 spawnPoint = spawner.position + randomVector;
+            Instantiate(item, spawnPoint, therotation, foodParent);
 
         }
 

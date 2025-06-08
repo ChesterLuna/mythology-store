@@ -9,6 +9,7 @@ TagManager:
   - DriversLicense
   - UnoReverseCard
   - WalletArea
+  - MainCanvas
   layers:
   - Default
   - TransparentFX
