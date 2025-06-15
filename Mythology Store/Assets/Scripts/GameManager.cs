@@ -100,9 +100,18 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void DestroyManager()
+    {
+        Destroy(this.gameObject);
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+        ConversationManager.OnConversationStarted -= StopMovement;
+        ConversationManager.OnConversationEnded -= AllowMovement;
+    }
+
     internal void TimeFinished()
     {
         Debug.Log("Game is done");
+        GameManager.Instance.DestroyManager();
         SceneManager.LoadScene("LoseGame");
     }
 

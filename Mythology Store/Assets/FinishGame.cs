@@ -17,6 +17,7 @@ public class FinishGame : MonoBehaviour
     public IEnumerator EndGame()
     {
         GameManager.Instance.StopMovement();
+        GameManager.Instance.DestroyManager();
         // Play Audio
         Instantiate(clipPlayer).GetComponent<AudioSource>().PlayOneShot(winSound);
 
@@ -27,12 +28,11 @@ public class FinishGame : MonoBehaviour
 
         yield return new WaitForSeconds(winSound.length);
 
-        SceneManager.LoadScene("Win Game");
+        SceneManager.LoadScene("WinGame");
     }
 
     public void PlayAgain()
     {
-        Destroy(GameManager.Instance);
         SceneManager.LoadScene("Grocery Store");
     }
 
