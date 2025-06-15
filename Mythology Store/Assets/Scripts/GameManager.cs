@@ -103,6 +103,7 @@ public class GameManager : MonoBehaviour
     internal void TimeFinished()
     {
         Debug.Log("Game is done");
+        SceneManager.LoadScene("LoseGame");
     }
 
     internal void SwitchMusicToMain()

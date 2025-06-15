@@ -22,6 +22,7 @@ namespace DialogueEditor
         SerializedProperty ScrollTextProperty;
         SerializedProperty ScrollTextSpeedProperty;
         SerializedProperty AllowMouseInteractionProperty;
+        SerializedProperty ButtonPrefabProperty;
 
         private void OnEnable()
         {
@@ -32,6 +33,7 @@ namespace DialogueEditor
             ScrollTextProperty = serializedObject.FindProperty("ScrollText");
             ScrollTextSpeedProperty = serializedObject.FindProperty("ScrollSpeed");
             AllowMouseInteractionProperty = serializedObject.FindProperty("AllowMouseInteraction");
+            ButtonPrefabProperty = serializedObject.FindProperty("ButtonPrefab");
         }
 
         public override void OnInspectorGUI()
@@ -69,6 +71,10 @@ namespace DialogueEditor
             // Interaction options
             GUILayout.Label("Interaction options", EditorStyles.boldLabel);
             EditorGUILayout.PropertyField(AllowMouseInteractionProperty);
+
+            // Interaction options
+            GUILayout.Label("Prefab options", EditorStyles.boldLabel);
+            EditorGUILayout.PropertyField(ButtonPrefabProperty);
 
             // Apply changes to the serializedProperty - always do this in the end of OnInspectorGUI.
             serializedObject.ApplyModifiedProperties();

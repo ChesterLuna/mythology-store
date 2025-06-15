@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FinishGame : MonoBehaviour
 {
@@ -26,6 +27,18 @@ public class FinishGame : MonoBehaviour
 
         yield return new WaitForSeconds(winSound.length);
 
+        SceneManager.LoadScene("Win Game");
+    }
+
+    public void PlayAgain()
+    {
+        Destroy(GameManager.Instance);
+        SceneManager.LoadScene("Grocery Store");
+    }
+
+    public void LeaveGame()
+    {
         Application.Quit();
     }
+
 }
