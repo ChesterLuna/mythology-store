@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Grocery Store.unity
     guid: 69f77f2c969898f45b66336dbe27337e
+  - enabled: 1
+    path: Assets/Scenes/WinGame.unity
+    guid: 9c26695b5cd861742bc152ad1d82feae
+  - enabled: 1
+    path: Assets/Scenes/LoseGame.unity
+    guid: 9c6272de6e6ae474ab95e2226b79fe20
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
