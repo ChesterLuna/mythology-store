@@ -6,6 +6,7 @@ public class PlayerMover : MonoBehaviour
 {
     public Rigidbody2D rb;
     [SerializeField] public float speed = 1f;
+    [SerializeField] public float rotation = 1f;
 
     Vector2 movement = Vector2.zero;
     private bool allowMovement = true;
@@ -26,6 +27,11 @@ public class PlayerMover : MonoBehaviour
 
     void FixedUpdate()
     {
+        // Rotate
+        Vector2 lastVelocity = rb.linearVelocity;
+        Quaternion targetRotation = Quaternion.LookRotation(Vector3.forward, lastVelocity);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotation * Time.fixedDeltaTime);
+
         rb.linearVelocity = movement * speed * Time.fixedDeltaTime;
         // rb.AddForce(movement * speed);
         // print(movement * speed);
